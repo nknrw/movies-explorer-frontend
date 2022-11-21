@@ -1,0 +1,17 @@
+.about-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 608px;
+    width: 100%;
+}
+
+.about-project__title {
+    margin: 110px auto auto 70px;
+}
+
+.about-project__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

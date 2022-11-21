@@ -2,7 +2,6 @@ import React from "react";
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Header from '../Header/Header';
-import Navigation from '../Navigation/Navigation';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 import Movies from '../Movies/Movies';
@@ -15,7 +14,6 @@ function App() {
     return (
         <div className="app">
             <Header />
-            <Navigation />
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/movies" element={<Movies />} />

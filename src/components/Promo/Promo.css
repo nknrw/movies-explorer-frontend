@@ -1,4 +1,20 @@
 .promo {
     background-color: #F3C1F8;
+    height: 634px;
+    margin-top: -74px;
+    display: flex;
+    flex-direction: column;
+}
 
+.promo__title {
+    max-width: 626px;
+    margin: 124px 0 0 70px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.promo__logo {
+    margin: auto 70px 60px auto;
+    width: 722px;
+    height: 244px;
 }

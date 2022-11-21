@@ -1,35 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f23179bf-cd3b-4cbd-945f-27d64109c142" name="Changes" comment="feat: создать основные файлы">
-      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Register/Register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Register/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logo.svg" afterDir="false" />
+    <list default="true" id="f23179bf-cd3b-4cbd-945f-27d64109c142" name="Changes" comment="feat: сверстать без стилей">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutProject/AboutProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutProject/AboutProject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutProject/AboutProject.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutProject/AboutProject.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Movies/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movies/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoviesCardsList/MoviesCardsList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoviesCardsList/MoviesCardsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavTab/NavTab.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavTab/NavTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Portfolio/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Portfolio/Portfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Promo/Promo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Promo/Promo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Promo/Promo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Promo/Promo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SavedMovies/SavedMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SavedMovies/SavedMovies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Techs/Techs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Techs/Techs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +84,10 @@
       <workItem from="1668701140974" duration="2230000" />
       <workItem from="1668714624344" duration="2450000" />
       <workItem from="1668875227349" duration="2578000" />
-      <workItem from="1668887412995" duration="4975000" />
+      <workItem from="1668887412995" duration="5927000" />
+      <workItem from="1668984309719" duration="2098000" />
+      <workItem from="1669057087612" duration="3769000" />
+      <workItem from="1669069279112" duration="1541000" />
     </task>
     <task id="LOCAL-00001" summary="feat: создать основные файлы">
       <created>1668702063353</created>
@@ -111,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668702063353</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: сверстать без стилей">
+      <created>1668894462658</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668894462658</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +140,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat: создать основные файлы" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: создать основные файлы" />
+    <MESSAGE value="feat: сверстать без стилей" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: сверстать без стилей" />
   </component>
 </project>
