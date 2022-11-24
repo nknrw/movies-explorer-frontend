@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f23179bf-cd3b-4cbd-945f-27d64109c142" name="Changes" comment="feat: всякие добавления">
+    <list default="true" id="f23179bf-cd3b-4cbd-945f-27d64109c142" name="Changes" comment="feat: исправить лого">
+      <change afterPath="$PROJECT_DIR$/src/images/about-me-photo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/link-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/profile-icon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutProject/AboutProject.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutProject/AboutProject.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutProject/AboutProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutProject/AboutProject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Promo/Promo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Promo/Promo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Techs/Techs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Techs/Techs.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +94,10 @@
       <workItem from="1669057087612" duration="3769000" />
       <workItem from="1669069279112" duration="2276000" />
       <workItem from="1669150943308" duration="50000" />
+      <workItem from="1669151425943" duration="67000" />
+      <workItem from="1669160855128" duration="2062000" />
+      <workItem from="1669249285421" duration="593000" />
+      <workItem from="1669258352043" duration="8333000" />
     </task>
     <task id="LOCAL-00001" summary="feat: создать основные файлы">
       <created>1668702063353</created>
@@ -102,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669071908955</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: исправить лого">
+      <created>1669151458934</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669151458934</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +166,7 @@
     <MESSAGE value="feat: создать основные файлы" />
     <MESSAGE value="feat: сверстать без стилей" />
     <MESSAGE value="feat: всякие добавления" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: всякие добавления" />
+    <MESSAGE value="feat: исправить лого" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: исправить лого" />
   </component>
 </project>
