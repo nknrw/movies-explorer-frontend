@@ -1,9 +1,10 @@
 .techs {
-    width: 100%;
+    /*width: 100%;*/
+    margin: 0 70px;
 }
 
 .techs__title {
-    margin: 100px 70px 90px 70px;
+    margin: 100px 0 90px 0;
     padding: 0 0 23px 0;
     font-size: 22px;
     font-weight: 400;

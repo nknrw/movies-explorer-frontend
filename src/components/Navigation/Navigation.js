@@ -12,7 +12,7 @@ function Navigation() {
                 <li className="navigation__list-item">
                     <Link to="/signup" className="navigation__link">Регистрация</Link>
                 </li>
-                <li className="navigation__list-item">
+                <li className="navigation__list-item navigation__list-item_signin">
                     <Link to="/signin" className="navigation__link navigation__link_signin">Войти</Link>
                 </li>
             </ul>

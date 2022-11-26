@@ -1,5 +1,8 @@
 .navigation {
     margin-right: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .navigation__list {
@@ -11,4 +14,26 @@
 
 .navigation__link {
     margin: 0;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navigation__link_signin {
+    color: #ffffff;
+}
+
+.navigation__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation__list-item_signin {
+    width: 76px;
+    height: 32px;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #000000;
 }

@@ -1,10 +1,10 @@
 .about-me {
-    width: 100%;
-    margin: 0;
+    /*width: 100%;*/
+    margin: 0 70px;
 }
 
 .about-me__title {
-    margin: 110px 70px 66px 70px;
+    margin: 110px 0 66px 0;
     padding: 0 0 23px 0;
     font-size: 22px;
     font-weight: 400;
@@ -12,7 +12,7 @@
 }
 
 .about-me__info {
-    margin: 0 70px 100px 70px;
+    margin: 0 0 100px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -49,11 +49,11 @@
     font-size: 18px;
     color: #A0A0A0;
     font-weight: 400;
-    margin: 0 70px 50px 70px;
+    margin: 0 0 50px 0;
 }
 
 .about-me__links {
-    margin: 0 70px 0 70px;
+    margin: 0 0 125px 0;
     list-style: none;
     padding: 0;
     display: flex;
