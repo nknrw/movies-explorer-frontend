@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f23179bf-cd3b-4cbd-945f-27d64109c142" name="Changes" comment="feat: еще добавления">
+    <list default="true" id="f23179bf-cd3b-4cbd-945f-27d64109c142" name="Changes" comment="feat: еще добавления (логин и регистрация)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutProject/AboutProject.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutProject/AboutProject.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Promo/Promo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Promo/Promo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/Register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Techs/Techs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Techs/Techs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Movies/Movies.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movies/Movies.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +93,7 @@
       <workItem from="1669475906287" duration="3862000" />
       <workItem from="1669488802306" duration="2218000" />
       <workItem from="1669507821621" duration="3844000" />
-      <workItem from="1669523776057" duration="5173000" />
+      <workItem from="1669523776057" duration="6479000" />
     </task>
     <task id="LOCAL-00001" summary="feat: создать основные файлы">
       <created>1668702063353</created>
@@ -144,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669483969945</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: еще добавления (логин и регистрация)">
+      <created>1669557610309</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669557610309</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +186,7 @@
     <MESSAGE value="feat: исправить лого" />
     <MESSAGE value="feat: сверстать главную" />
     <MESSAGE value="feat: еще добавления" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: еще добавления" />
+    <MESSAGE value="feat: еще добавления (логин и регистрация)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: еще добавления (логин и регистрация)" />
   </component>
 </project>
