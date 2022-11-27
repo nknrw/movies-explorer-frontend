@@ -1,8 +1,11 @@
 .search-form {
+    margin: 70px 70px 80px 70px;
+}
+
+.search-form__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 70px 70px 80px 70px;
     height: 72px;
     /*padding: 25px;*/
     border: 1px solid #AAAAAA;
