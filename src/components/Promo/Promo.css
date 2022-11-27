@@ -15,6 +15,6 @@
 
 .promo__logo {
     margin: auto 0 60px auto;
-    width: 722px;
-    height: 244px;
+    max-width: 722px;
+    max-height: 244px;
 }
