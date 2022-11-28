@@ -5,7 +5,7 @@ import "./Navigation.css";
 function Navigation() {
     const location = useLocation();
     return (
-        <nav className="navigation">
+        <section className="navigation">
             {location.pathname === '/' ? (
             <nav className="navigation__list">
                     <Link to="/signup" className="navigation__link">Регистрация</Link>
@@ -19,7 +19,7 @@ function Navigation() {
                     <Link to="/profile" className="navigation__link navigation__link_profile"/>
             </nav>
             )}
-        </nav>
+        </section>
     )
 }
 
