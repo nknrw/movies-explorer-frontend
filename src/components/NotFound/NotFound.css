@@ -21,7 +21,7 @@
     margin: 0;
 }
 
-.not-found__link {
+.not-found__button {
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
@@ -29,4 +29,6 @@
     color: #000000;
     position: absolute;
     bottom: 60px;
+    border: none;
+    background-color: #ffffff;
 }

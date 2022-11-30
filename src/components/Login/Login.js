@@ -1,11 +1,13 @@
 import React from "react";
 import "./Login.css";
 import logo from "../../images/logo.svg";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+    const navigate = useNavigate();
     return (
         <section className="login">
-            <img className="login__logo" src={logo} alt="Логотип" />
+            <img onClick={() => navigate("/")} className="login__logo" src={logo} alt="Логотип" />
             <h2 className="login__title">Рады видеть!</h2>
             <form className="login__form">
                 <label className="login__label">E-mail</label>

@@ -1,31 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f23179bf-cd3b-4cbd-945f-27d64109c142" name="Changes" comment="feat: почти 2">
-      <change afterPath="$PROJECT_DIR$/src/components/NotFound/NotFound.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NotFound/NotFound.js" afterDir="false" />
+    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/HamburgerMenu/HamburgerMenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HamburgerMenu/HamburgerMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/hamburger-close-button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/hamburger-open-button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movie_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movie_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movie_11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movie_12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movie_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movie_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movie_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movie_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movie_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movie_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movie_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movie_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movies-card-delete-button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movies-like-button-active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/movies-like-button-not-active.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SavedMovies/SavedMovies.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SavedMovies/SavedMovies.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NotFound/NotFound.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NotFound/NotFound.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NotFound/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NotFound/NotFound.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Register/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/Register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/Register.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2HVtzqsLODKd67hhL5dloJRVOxW" />
+  <component name="ProjectId" id="2IEXE97hm3CuqSppVlQhDswO2ve" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -39,13 +73,23 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Dev/diploma/movies-explorer-frontend/src/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dev\diploma\movies-explorer-frontend\src\images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -66,105 +110,19 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f23179bf-cd3b-4cbd-945f-27d64109c142" name="Changes" comment="" />
-      <created>1668382346461</created>
+      <changelist id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="" />
+      <created>1669747605228</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1668382346461</updated>
-      <workItem from="1668382347718" duration="967000" />
-      <workItem from="1668383340610" duration="1648000" />
-      <workItem from="1668454496166" duration="1210000" />
-      <workItem from="1668537071519" duration="1319000" />
-      <workItem from="1668550983433" duration="595000" />
-      <workItem from="1668631763187" duration="2601000" />
-      <workItem from="1668701140974" duration="2230000" />
-      <workItem from="1668714624344" duration="2450000" />
-      <workItem from="1668875227349" duration="2578000" />
-      <workItem from="1668887412995" duration="5927000" />
-      <workItem from="1668984309719" duration="2098000" />
-      <workItem from="1669057087612" duration="3769000" />
-      <workItem from="1669069279112" duration="2276000" />
-      <workItem from="1669150943308" duration="50000" />
-      <workItem from="1669151425943" duration="67000" />
-      <workItem from="1669160855128" duration="2062000" />
-      <workItem from="1669249285421" duration="593000" />
-      <workItem from="1669258352043" duration="9111000" />
-      <workItem from="1669323961895" duration="298000" />
-      <workItem from="1669325932800" duration="1736000" />
-      <workItem from="1669343813126" duration="1685000" />
-      <workItem from="1669475906287" duration="3862000" />
-      <workItem from="1669488802306" duration="2218000" />
-      <workItem from="1669507821621" duration="3844000" />
-      <workItem from="1669523776057" duration="6665000" />
-      <workItem from="1669559783844" duration="596000" />
-      <workItem from="1669564550791" duration="5475000" />
-      <workItem from="1669583903368" duration="1426000" />
-      <workItem from="1669609890007" duration="1789000" />
+      <updated>1669747605228</updated>
+      <workItem from="1669747609385" duration="351000" />
+      <workItem from="1669748026182" duration="52000" />
+      <workItem from="1669748087216" duration="5420000" />
+      <workItem from="1669772019427" duration="240000" />
+      <workItem from="1669772283694" duration="587000" />
+      <workItem from="1669772890179" duration="565000" />
+      <workItem from="1669782878634" duration="564000" />
     </task>
-    <task id="LOCAL-00001" summary="feat: создать основные файлы">
-      <created>1668702063353</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1668702063353</updated>
-    </task>
-    <task id="LOCAL-00002" summary="feat: сверстать без стилей">
-      <created>1668894462658</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1668894462658</updated>
-    </task>
-    <task id="LOCAL-00003" summary="feat: всякие добавления">
-      <created>1669071908955</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1669071908955</updated>
-    </task>
-    <task id="LOCAL-00004" summary="feat: исправить лого">
-      <created>1669151458934</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1669151458934</updated>
-    </task>
-    <task id="LOCAL-00005" summary="feat: сверстать главную">
-      <created>1669267085283</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1669267085283</updated>
-    </task>
-    <task id="LOCAL-00006" summary="feat: еще добавления">
-      <created>1669483969945</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1669483969945</updated>
-    </task>
-    <task id="LOCAL-00007" summary="feat: еще добавления (логин и регистрация)">
-      <created>1669557610309</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1669557610309</updated>
-    </task>
-    <task id="LOCAL-00008" summary="feat: почти (поиск)">
-      <created>1669559025602</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1669559025602</updated>
-    </task>
-    <task id="LOCAL-00009" summary="feat: почти 2">
-      <created>1669570257696</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1669570257696</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,24 +133,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="level-2" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -200,15 +141,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: создать основные файлы" />
-    <MESSAGE value="feat: сверстать без стилей" />
-    <MESSAGE value="feat: всякие добавления" />
-    <MESSAGE value="feat: исправить лого" />
-    <MESSAGE value="feat: сверстать главную" />
-    <MESSAGE value="feat: еще добавления" />
-    <MESSAGE value="feat: еще добавления (логин и регистрация)" />
-    <MESSAGE value="feat: почти (поиск)" />
-    <MESSAGE value="feat: почти 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: почти 2" />
   </component>
 </project>

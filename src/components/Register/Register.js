@@ -1,11 +1,13 @@
 import React from "react";
 import "./Register.css";
 import logo from "../../images/logo.svg";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
+    const navigate = useNavigate();
     return (
         <section className="register">
-            <img className="register__logo" src={logo} alt="Логотип" />
+            <img onClick={() => navigate("/")} className="register__logo" src={logo} alt="Логотип" />
             <h2 className="register__title">Добро пожаловать!</h2>
             <form className="register__form">
                 <label className="register__label">Имя</label>

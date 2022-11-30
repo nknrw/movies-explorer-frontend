@@ -12,7 +12,7 @@
     gap: 30px;
 }
 
-.navigation__link {
+.navigation__link-login {
     margin: 0;
     color: #000000;
     font-size: 13px;
@@ -36,4 +36,26 @@
     height: 30px;
     border-radius: 4px;
     background: #F9F9F9 url("../../images/profile-icon.svg") no-repeat center;
+}
+
+.navigation__hamburger-menu-button {
+    display: none;
+    width: 44px;
+    height: 44px;
+    background: #F9F9F9 url("../../images/hamburger-open-button.svg") no-repeat;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation__hamburger-menu-button {
+        display: block;
+    }
+
+    .navigation__link-login {
+        display: none;
+    }
 }
