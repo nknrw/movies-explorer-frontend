@@ -109,10 +109,7 @@ let movieList = moviesListArray.map((movie) =>
 function MoviesCardList() {
     return (
         <section className="movies-cards-list">
-            {/*<div className="movies-cards-list__container">*/}
-            {/*</div>*/}
-            {/*<button className="movies-cards-list__button">Ещё</button>*/}
-            <ul className='movies-list__list'>{movieList}</ul>
+            <div className='movies-cards-list__list'>{movieList}</div>
         </section>
     )
 }

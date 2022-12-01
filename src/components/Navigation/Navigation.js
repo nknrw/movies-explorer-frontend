@@ -14,15 +14,15 @@ function Navigation() {
         <section className="navigation">
             {location.pathname === '/' ? (
             <nav className="navigation__list">
-                    <Link to="/signup" className="navigation__link">Регистрация</Link>
-                    <Link to="/signin" className="navigation__link navigation__link_signin">Войти</Link>
+                    <Link to="/signup" className="navigation__link navigation__link_main">Регистрация</Link>
+                    <Link to="/signin" className="navigation__link navigation__link_main navigation__link_signin">Войти</Link>
             </nav>
             ) : (
             <nav className="navigation__list">
-                    <Link to="/movies" className="navigation__link-login">Фильмы</Link>
-                    <Link to="/saved-movies" className="navigation__link-login">Сохранённые фильмы</Link>
-                    <Link to="/profile" className="navigation__link-login">Аккаунт</Link>
-                    <Link to="/profile" className="navigation__link-login navigation__link_profile"/>
+                    <Link to="/movies" className="navigation__link">Фильмы</Link>
+                    <Link to="/saved-movies" className="navigation__link">Сохранённые фильмы</Link>
+                    <Link to="/profile" className="navigation__link">Аккаунт</Link>
+                    <Link to="/profile" className="navigation__link navigation__link_profile"/>
                 <div className="navigation__hamburger-menu">
                     <button className="navigation__hamburger-menu-button" onClick={handleHamburgerMenuOpen}/>
                     <HamburgerMenu

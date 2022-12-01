@@ -1,6 +1,8 @@
 .login {
-    padding: 70px 442px;
+    margin: 70px auto;
     width: 396px;
+    display: flex;
+    flex-direction: column;
 }
 
 .login__logo {
@@ -70,4 +72,21 @@
     font-weight: 400;
     color: #000000;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .login {
+        margin: 232px auto;
+    }
+}
+
+@media (max-width: 350px) {
+    .login {
+        margin: 56px auto 30px;
+        max-width: 260px;
+    }
+
+    .login__logo {
+        align-self: center;
+    }
 }

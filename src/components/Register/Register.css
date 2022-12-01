@@ -1,6 +1,8 @@
 .register {
-    padding: 70px 442px;
-    width: 396px;
+    max-width: 396px;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .register__logo {
@@ -70,4 +72,21 @@
     font-weight: 400;
     color: #000000;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .register {
+        margin: 232px auto;
+    }
+}
+
+@media (max-width: 350px) {
+    .register {
+        margin: 56px auto 30px;
+        max-width: 260px;
+    }
+
+    .register__logo {
+        align-self: center;
+    }
 }
