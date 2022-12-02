@@ -41,6 +41,7 @@
     grid-template-columns: repeat(auto-fit, 84px);
     grid-template-rows: repeat(auto-fit, 57px);
     gap: 10px;
+    justify-content: center;
 }
 
 .techs__list-item {

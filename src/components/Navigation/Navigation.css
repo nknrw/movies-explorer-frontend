@@ -22,12 +22,23 @@
     justify-content: center;
 }
 
+.navigation__link:hover {
+    opacity: 0.5;
+    transition: .5s;
+}
+
 .navigation__link_signin {
     color: #ffffff;
     width: 76px;
     height: 32px;
     border-radius: 3px;
     background-color: #000000;
+}
+
+.navigation__link_signin:hover {
+    background-color: #aaaaaa;
+    color: #000000;
+    opacity: 1;
 }
 
 .navigation__link_profile {
@@ -37,7 +48,7 @@
     background: #F9F9F9 url("../../images/profile-icon.svg") no-repeat center;
 }
 
-.navigation__hamburger-menu-button {
+.navigation__menu-button {
     display: none;
     width: 22px;
     height: 22px;
@@ -50,7 +61,7 @@
 
 @media screen and (max-width: 768px) {
 
-    .navigation__hamburger-menu-button {
+    .navigation__menu-button {
         display: block;
     }
 

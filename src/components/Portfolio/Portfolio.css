@@ -30,6 +30,11 @@
     text-decoration: none;
 }
 
+.portfolio__link:hover {
+    opacity: 0.5;
+    transition: .5s;
+}
+
 .portfolio__link:last-of-type {
     border-bottom: none;
 }

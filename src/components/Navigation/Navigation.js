@@ -23,8 +23,8 @@ function Navigation() {
                     <Link to="/saved-movies" className="navigation__link">Сохранённые фильмы</Link>
                     <Link to="/profile" className="navigation__link">Аккаунт</Link>
                     <Link to="/profile" className="navigation__link navigation__link_profile"/>
-                <div className="navigation__hamburger-menu">
-                    <button className="navigation__hamburger-menu-button" onClick={handleHamburgerMenuOpen}/>
+                <div className="navigation__menu">
+                    <button className="navigation__menu-button" onClick={handleHamburgerMenuOpen}/>
                     <HamburgerMenu
                         open={isHamburgerMenuOpen}
                         close={handleHamburgerMenuOpen}

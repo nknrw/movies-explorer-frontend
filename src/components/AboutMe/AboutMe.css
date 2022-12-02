@@ -60,6 +60,11 @@
     font-weight: 500;
 }
 
+.about-me__socials_link:hover {
+    opacity: 0.5;
+    transition: .5s;
+}
+
 @media (max-width: 768px) {
     .about-me {
         padding: 90px 50px;
