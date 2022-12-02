@@ -89,4 +89,8 @@
     .register__logo {
         align-self: center;
     }
+
+    .register__title {
+        text-align: center;
+    }
 }

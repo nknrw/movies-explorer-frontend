@@ -46,7 +46,7 @@
     color: #A0A0A0;
 }
 
-.movies-card__like-btn {
+.movies-card__like-button {
     background: url('../../images/movies-like-button-not-active.svg') no-repeat center;
     background-size: contain;
     width: 14px;
@@ -55,7 +55,7 @@
     padding: 0;
 }
 
-.movies-card__like-btn__active {
+.movies-card__like-button_active {
     background:  url('../../images/movies-like-button-active.svg') no-repeat;
     width: 14px;
     height: 12px;

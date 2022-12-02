@@ -87,6 +87,13 @@
     }
 }
 
+@media (max-width: 550px) {
+    .about-me__info {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+}
+
 @media (max-width: 350px) {
     .about-me {
         padding: 70px 14px;

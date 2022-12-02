@@ -11,6 +11,10 @@
     border-radius: 8px;
 }
 
+.search-form__container:hover {
+    border: 1px #000000 solid;
+}
+
 .search-form__input {
     width: 100%;
     font-size: 18px;
@@ -46,6 +50,12 @@
     .search-form__container {
         height: 52px;
     }
+
+    .search-form__button {
+        width: 80px;
+        height: 44px;
+        margin: 6px 6px 6px 0;
+    }
 }
 
 @media (max-width: 350px) {
@@ -54,9 +64,9 @@
     }
 
     .search-form__button {
-        width: 80px;
-        height: 44px;
-        margin: 6px 6px 6px 0;
+        /*width: 80px;*/
+        /*height: 44px;*/
+        /*margin: 6px 6px 6px 0;*/
     }
 
     .search-form__input {

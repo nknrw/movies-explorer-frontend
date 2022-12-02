@@ -6,7 +6,7 @@ const MoviesCard = ({ movie }) => {
 
     const { title, imgMovie, duration, isLiked } = movie;
     const durationTime =`${Math.floor(duration / 60)}ч ${duration % 60}м`;
-    const cardLikeButtonClassName = `movies-card__like-btn ${isLiked && 'movies-card__like-btn__active' }`
+    const cardLikeButtonClassName = `movies-card__like-button ${isLiked && 'movies-card__like-button_active' }`
     const location = useLocation();
 
     return (
