@@ -20,11 +20,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .5s;
+    border-bottom: 1px solid transparent;
 }
 
 .navigation__link:hover {
-    opacity: 0.5;
     transition: .5s;
+    border-bottom: 1px solid #000000;
 }
 
 .navigation__link_signin {
@@ -33,12 +35,20 @@
     height: 32px;
     border-radius: 3px;
     background-color: #000000;
+    transition: .5s;
 }
 
 .navigation__link_signin:hover {
-    background-color: #aaaaaa;
+    transition: .5s;
+    background-color: #ffffff;
     color: #000000;
-    opacity: 1;
+    border-bottom: none;
+    box-shadow:  10px 10px 20px #808080;
+}
+
+.navigation__link_signin:active {
+    box-shadow: inset 5px 5px 10px #808080;
+    transition: .5s;
 }
 
 .navigation__link_profile {
@@ -46,6 +56,18 @@
     height: 30px;
     border-radius: 4px;
     background: #F9F9F9 url("../../images/profile-icon.svg") no-repeat center;
+    transition: .5s;
+}
+
+.navigation__link_profile:hover {
+    border-bottom: 1px solid transparent;
+    box-shadow:  10px 10px 20px #808080;
+    transition: .5s;
+}
+
+.navigation__link_profile:active {
+    box-shadow: inset 5px 5px 10px #808080;
+    transition: .5s;
 }
 
 .navigation__menu-button {

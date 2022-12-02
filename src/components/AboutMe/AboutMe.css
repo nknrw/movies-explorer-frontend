@@ -58,11 +58,13 @@
     color: #000;
     font-size: 14px;
     font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: .5s;
 }
 
 .about-me__socials_link:hover {
-    opacity: 0.5;
     transition: .5s;
+    border-bottom: 1px solid #000000;
 }
 
 @media (max-width: 768px) {

@@ -1,7 +1,6 @@
 .movies-card {
     display: flex;
     flex-direction: column;
-
 }
 
 .movies-card__container {
@@ -22,9 +21,9 @@
     gap: 17px 12px;
 }
 
-.movies-card__info:hover {
-    cursor: pointer;
-}
+/*.movies-card__info:hover {*/
+/*    cursor: pointer;*/
+/*}*/
 
 .movies-card__title {
     margin: 0;
@@ -53,6 +52,7 @@
     height: 12px;
     border: none;
     padding: 0;
+    cursor: pointer;
 }
 
 .movies-card__like-button_active {

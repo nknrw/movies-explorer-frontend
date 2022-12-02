@@ -33,6 +33,13 @@
 }
 
 .footer__link {
+    border-bottom: 1px solid transparent;
+    transition: .5s;
+}
+
+.footer__link:hover {
+    transition: .5s;
+    border-bottom: 1px solid #000000;
 }
 
 .footer__link-item {

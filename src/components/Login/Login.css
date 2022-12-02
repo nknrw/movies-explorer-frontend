@@ -57,6 +57,20 @@
     border: none;
     margin: 128px 0 0 0;
     cursor: pointer;
+    transition: .5s;
+
+}
+
+.login__button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow:  10px 10px 20px #808080;
+    transition: .5s;
+}
+
+.login__button:active {
+    box-shadow: inset 5px 5px 10px #808080;
+    transition: .5s;
 }
 
 .login__text {
@@ -72,6 +86,13 @@
     font-weight: 400;
     color: #000000;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: .5s;
+}
+
+.login__link:hover {
+    transition: .5s;
+    border-bottom: 1px solid #000000;
 }
 
 @media (max-width: 768px) {
