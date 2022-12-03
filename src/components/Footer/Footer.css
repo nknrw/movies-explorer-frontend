@@ -19,6 +19,8 @@
 }
 
 .footer__year {
+    display: flex;
+    align-items: center;
     font-size: 13px;
     font-weight: 400;
 }

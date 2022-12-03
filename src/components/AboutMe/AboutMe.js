@@ -12,7 +12,7 @@ function AboutMe() {
                     <p className="about-me__profession">Фронтенд-разработчик, 27 лет</p>
                     <p className="about-me__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <ul className='about-me__socials'>
-                        <a className='about-me__socials_link' href='https://github.com/nknrw' target='_blank' rel="noreferrer">Github</a>
+                        <a className='about-me__link' href='https://github.com/nknrw' target='_blank' rel="noreferrer">Github</a>
                     </ul>
                 </div>
                 <img className="about-me__photo" src={photo} alt="Фото студента" />

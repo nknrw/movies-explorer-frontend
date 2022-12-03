@@ -1,8 +1,12 @@
 .login {
     margin: 70px auto;
-    width: 396px;
+    max-width: 396px;
     display: flex;
     flex-direction: column;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    justify-self: center;
+    align-self: center;
 }
 
 .login__logo {
@@ -10,12 +14,14 @@
     height: 38px;
     margin: 0 0 40px 0;
     cursor: pointer;
+    align-self: start;
 }
 
 .login__title {
     font-size: 24px;
     font-weight: 500;
     margin: 0 0 40px 0;
+    align-self: start;
 }
 
 .login__form {
@@ -98,12 +104,13 @@
 @media (max-width: 768px) {
     .login {
         margin: 232px auto;
+        padding: 0 30px;
     }
 }
 
 @media (max-width: 350px) {
     .login {
-        margin: 56px auto 30px;
+        margin: 56px 0;
         max-width: 260px;
     }
 
@@ -112,6 +119,6 @@
     }
 
     .login__title {
-        text-align: center;
+        align-self: center;
     }
 }
