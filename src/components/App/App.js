@@ -83,13 +83,15 @@ function App() {
             mainApi
                 .getMovies(localStorage.getItem('jwt'))
                 .then((res) => {
+                    setSavedMovies(res);
                     localStorage.setItem('savedMovies', JSON.stringify(res));
                 })
                 .catch((err) => {
                     console.log(err);
                 });
-            if (localStorage.getItem('savedMovies')) {
-                setSavedMovies(filteredMovies)
+            if (localStorage.filteredMovies) {
+                // setFilteredMovies(JSON.parse(localStorage.getItem('filteredMovies')));
+                setSavedMovies(filteredMovies);
             }
         }
     }, [loggedIn, filteredMovies])

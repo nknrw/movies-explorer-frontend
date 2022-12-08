@@ -98,7 +98,7 @@ const MoviesCardList = ({
     } else if (location.pathname === '/saved-movies') {
         return (
             <section className='movies-card__list'>
-                <ul className='movies-card-list__list'>
+                {/*<ul className='movies-card-list__list'>*/}
                     {movies.length ? (
                         moviesToShow.map((movie) =>
                             <MoviesCard
@@ -116,7 +116,7 @@ const MoviesCardList = ({
                             По вашему запросу ничего не найдено
                         </p>
                     )}
-                </ul>
+                {/*</ul>*/}
             </section>
         )
     }

@@ -102,7 +102,7 @@ export const addMovie = (movie, jwt) => {
       thumbnail: `https://api.nomoreparties.co${movie.image.formats.thumbnail.url}`,
     })
   })
-    .then(this._checkResponse);
+    .then((res) => _checkResponse(res));
 }
 
 // удаление фильма из сохраненных на сервер по токену пользователя

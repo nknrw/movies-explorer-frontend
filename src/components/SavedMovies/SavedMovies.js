@@ -29,13 +29,7 @@ const SavedMovies = ({
             setIsShort(isShort);
             setCheckActive(true);
         }
-    }, []);
-
-    useEffect(() => {
-        if (filterMovies.lenght === 0) {
-            setNoResults(false);
-        }
-    }, []);
+    }, [isShort]);
 
     const filterMovies = useMemo(
         () =>
@@ -44,6 +38,12 @@ const SavedMovies = ({
             ),
         [filter, savedMovies]
     );
+
+    useEffect(() => {
+        if (filterMovies.length === 0) {
+            setNoResults(false);
+        }
+    }, [filterMovies.length]);
 
     return (
         <section className="saved-movies">

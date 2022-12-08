@@ -4,25 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: исправить отступ в меню">
+    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="feat: сохраненные фильмы кое-как без стилей">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FilterCheckbox/FilterCheckbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilterCheckbox/FilterCheckbox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Movies/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movies/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProtectedRoute/ProtectedRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProtectedRoute/ProtectedRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SavedMovies/SavedMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SavedMovies/SavedMovies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/CurrentUserContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/CurrentUserContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/MainApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/MainApi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,6 +139,10 @@
       <workItem from="1670446759162" duration="1980000" />
       <workItem from="1670492497846" duration="192000" />
       <workItem from="1670508264966" duration="3388000" />
+      <workItem from="1670519858542" duration="457000" />
+      <workItem from="1670527638866" duration="3481000" />
+      <workItem from="1670534388785" duration="1027000" />
+      <workItem from="1670536637642" duration="110000" />
     </task>
     <task id="LOCAL-00001" summary="feat: бургер меню и карточки фильмов">
       <created>1669785969879</created>
@@ -215,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670429930198</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: поиск фильмов">
+      <created>1670520109869</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670520109869</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +253,8 @@
     <MESSAGE value="fix: фикс формы регистрации" />
     <MESSAGE value="feat: перевести на react-router-dom v5" />
     <MESSAGE value="fix: исправить отступ в меню" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: исправить отступ в меню" />
+    <MESSAGE value="feat: поиск фильмов" />
+    <MESSAGE value="feat: сохраненные фильмы кое-как без стилей" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: сохраненные фильмы кое-как без стилей" />
   </component>
 </project>

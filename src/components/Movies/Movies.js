@@ -33,7 +33,7 @@ const Movies = ({
             setIsShort(isShort);
             setCheckActive(true);
         }
-    }, []);
+    }, [isShort]);
 
     useEffect(() => {
         if (!localStorage.loadedMovies) {
@@ -45,7 +45,7 @@ const Movies = ({
                 })
                 .catch((err) => console.log(err));
         }
-    }, []);
+    }, [setAllMovies]);
 
     return (
         <>
