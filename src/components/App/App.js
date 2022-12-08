@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 import {Route, Switch, useRouteMatch, useHistory, useLocation, Redirect } from 'react-router-dom';
+
 import * as mainApi from '../../utils/MainApi';
+
 import { CurrentUserContext } from '../../contexts/CurrentUserContext';
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
 
@@ -14,15 +16,28 @@ import Profile from '../Profile/Profile';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
 import NotFound from '../NotFound/NotFound';
+// import { addMovie } from "../../utils/MainApi";
 
 
 function App() {
     const history = useHistory();
     const location = useLocation();
-    // const jwt = localStorage.getItem('jwt');
 
     const [currentUser, setCurrentUser] = useState({});
     const [loggedIn, setLoggedIn] = useState(false);
+
+    const [movies, setMovies] = useState([]);
+    const [savedMovies, setSavedMovies] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
+    const [allMovies, setAllMovies] = useState(
+        JSON.parse(localStorage.getItem('loadedMovies')) || []
+    );
+    const [filteredMovies, setFilteredMovies] = useState(
+        JSON.parse(localStorage.getItem('filteredMovies')) || []
+    );
+    const [searchKeyword, setSearchKeyword] = useState(
+        localStorage.getItem('searchKeyword') || ''
+    );
 
     // // вот тут разобаться с роутингом = это по-новому 6-й версии
     // const { pathname } = useLocation();
@@ -37,6 +52,7 @@ function App() {
     const [loginMessage, setLoginMessage] = useState('');
 
     useEffect(() => {
+
         if (localStorage.getItem('jwt')) {
             // проверяем, есть ли токен в localStorage = потом удалить надо
             // console.log('log from use effect');
@@ -64,9 +80,19 @@ function App() {
                 .catch((err) => {
                     console.log(`Ошибка получения данных пользователя: ${err}`);
                 });
-
+            mainApi
+                .getMovies(localStorage.getItem('jwt'))
+                .then((res) => {
+                    localStorage.setItem('savedMovies', JSON.stringify(res));
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
+            if (localStorage.getItem('savedMovies')) {
+                setSavedMovies(filteredMovies)
+            }
         }
-    }, [loggedIn])
+    }, [loggedIn, filteredMovies])
 
     const onRegister = ({ name, password, email }) => {
         mainApi
@@ -89,8 +115,8 @@ function App() {
                 localStorage.setItem('jwt', data.token);
                 setLoggedIn(true);
                 mainApi.getUserInfo(localStorage.getItem('jwt'))
-                    .then((response) => {
-                        setCurrentUser(response);
+                    .then((res) => {
+                        setCurrentUser(res);
                     });
                 setLoginMessage('Авторизация прошла успешно...');
                 history.push('/movies');
@@ -112,24 +138,89 @@ function App() {
             })
     }
 
+    // поиск фильмов по ключевому слову в регистронезависимом режиме
+    const searchMovies = (movie, name) => {
+        return movie.filter((movie) =>
+            movie.nameRU.toLowerCase().includes(name.toLowerCase())
+        );
+    }
+    const handleSearchMovies = (name) => {
+        setIsLoading(true);
+        const newMovies = searchMovies(allMovies, name);
+        setMovies(newMovies);
+        localStorage.setItem('filteredMovies', JSON.stringify(newMovies));
+        setFilteredMovies(newMovies);
+        localStorage.setItem('searchKeyword', name);
+        setSearchKeyword(name);
+        setTimeout(() => setIsLoading(false), 1000);
+    }
+
     const signOut = () => {
         localStorage.removeItem('jwt');
+        localStorage.removeItem('savedMovies');
+        localStorage.removeItem('filteredMovies');
+        localStorage.removeItem('searchKeyword');
+        localStorage.removeItem('loadedMovies');
+        localStorage.removeItem('checkBox');
         setLoggedIn(false);
         setCurrentUser({});
         setProfileMessage('');
         setRegisterMessage('');
         setLoginMessage('');
+        setIsLoading(false);
+        setAllMovies([]);
+        setMovies([]);
+        setSavedMovies([]);
+        setFilteredMovies([]);
+        setSearchKeyword('');
+        history.push('/');
+    }
+
+    // сохранение фильма в личном кабинете пользователя и в localStorage
+    const handleSaveMovie = (movie) => {
+        mainApi
+            .addMovie(movie, localStorage.getItem('jwt'))
+            .then((data) => {
+                setSavedMovies([data, ...savedMovies]);
+                localStorage.setItem(
+                    "savedMovies",
+                    JSON.stringify([data, ...savedMovies])
+                );
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    }
+
+    const handleDeleteMovie = (movie) => {
+        const savedMovie = savedMovies.find((m) => m.movieId === movie.movieId);
+        mainApi
+            .deleteMovie(savedMovie._id, localStorage.getItem('jwt'))
+            .then(() => {
+                const newMovies = savedMovies.filter(
+                    (m) => m._id !== savedMovie._id
+                );
+                setSavedMovies(newMovies);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
     }
 
 
     return (
-        <CurrentUserContext.Provider value={currentUser}>
+        <CurrentUserContext.Provider
+            value={currentUser}>
+
         <div className="app">
-            {useRouteMatch(hideHeader) ? null : <Header loggedIn={loggedIn}/>}
+            {useRouteMatch(hideHeader) ? null :
+                ( <Header loggedIn={loggedIn}/>
+                )}
 
             <Switch>
                 <Route exact path="/">
-                    <Main loggedIn={loggedIn}/>
+                    <Main />
+                    {/*<Main loggedIn={loggedIn}/>*/}
                 </Route>
 
                 <Route path='/signup'>
@@ -150,12 +241,28 @@ function App() {
                     exact
                     component={Movies}
                     loggedIn={loggedIn}
+                    isLoading={isLoading}
+                    movies={movies}
+                    onSubmit={handleSearchMovies}
+                    onLike={handleSaveMovie}
+                    onDislike={handleDeleteMovie}
+                    searchKeyword={searchKeyword}
+                    savedMovies={savedMovies}
+                    setAllMovies={setAllMovies}
                 >
                 </ProtectedRoute>
 
-
-                <ProtectedRoute path='/saved-movies'>
-                    <SavedMovies loggedIn={loggedIn} />
+                <ProtectedRoute
+                    path='/saved-movies'
+                    exact
+                    component={SavedMovies}
+                    loggedIn={loggedIn}
+                    isLoading={isLoading}
+                    onDislike={handleDeleteMovie}
+                    savedMovies={savedMovies}
+                    setKeyword={setSearchKeyword}
+                >
+{/*<SavedMovies loggedIn={loggedIn} />*/}
                 </ProtectedRoute>
 
                 <ProtectedRoute
@@ -183,69 +290,4 @@ function App() {
 
 export default App;
 
-
-
-
-
-
-
-
-
-{/*            /!*вот тут разобаться с роутингом по-новому 6й версии*!/*/}
-{/*            {isHeaderVisible && <Header />}*/}
-{/*            <BrowserRouter>*/}
-{/*            /!*<Routes>*!/*/}
-{/*            /!*    <Route>*!/*/}
-
-{/*            /!*    </Route>*!/*/}
-{/*                <Route  path="/"*/}
-{/*                    element={<Main*/}
-{/*                    loggedIn={loggedIn}/>}*/}
-{/*                />*/}
-
-{/*                <Route path="/signin"*/}
-{/*                       element={<Login*/}
-{/*                           onAuth={onLogin}*/}
-{/*                           loginMessage={loginMessage}*/}
-{/*                       />} />*/}
-
-{/*                <Route path="/signup"*/}
-{/*                       element={<Register*/}
-{/*                            onAuth={onRegister}*/}
-{/*                            registerMessage={registerMessage}*/}
-{/*                       />} />*/}
-
-{/*                <Route path="/movies"*/}
-{/*                       element={<Movies*/}
-{/*                           exact*/}
-{/*                           component={Movies}*/}
-{/*                           loggedIn={loggedIn}*/}
-{/*                       />} />*/}
-
-{/*                <Route path="/saved-movies"*/}
-{/*                       element={<SavedMovies*/}
-{/*                            loggedIn={loggedIn}*/}
-{/*                       />} />*/}
-
-{/*                <Route path="/profile"*/}
-{/*                       element={<Profile*/}
-{/*                           exact*/}
-{/*                            component={Profile}*/}
-{/*                            loggedIn={loggedIn}*/}
-{/*                            onUpdateUser={handleUpdateUser}*/}
-{/*                            profileMessage={profileMessage}*/}
-{/*                            signOut={signOut}*/}
-{/*                       />} />*/}
-
-{/*                <Route path={"*"}*/}
-{/*                       element={<NotFound*/}
-{/*                       />} />*/}
-{/*            /!*</Routes>*!/*/}
-{/*            </BrowserRouter>*/}
-{/*            {isFooterVisible && <Footer />}*/}
-{/*        </div>*/}
-{/*        </CurrentUserContext.Provider>*/}
-{/*    );*/}
-{/*}*/}
-
-{/*export default App;*/}
+// удалил стары ретюрн

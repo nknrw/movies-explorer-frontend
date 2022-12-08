@@ -58,7 +58,8 @@ const Profile = ({onEditProfile, signOut, infoMessage}) => {
                   name='profile-form'
                   onSubmit={onFormSubmit}
                   id='profile'>
-                <h2 className='profile__title'>Привет, {currentUser.name}!</h2>
+
+                <h2 className='profile__title'>Привет,{currentUser.name}!</h2>
                 <div className='profile__fieldset'>
                     <label className='profile__label'>Имя
                         <input
@@ -115,6 +116,7 @@ const Profile = ({onEditProfile, signOut, infoMessage}) => {
                     className='profile__button profile__button-exit'
                     type='button'
                     onClick={signOut}>
+                    >
                     Выйти из аккаунта
                 </button>
             </form>

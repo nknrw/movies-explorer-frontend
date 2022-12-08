@@ -20,7 +20,7 @@ function Login({onAuth, infoMessage}) {
     return (
         <section className="login">
             <Link to="/">
-                <img className="login__logo" src={logo} alt="Логотип"/>
+                <img className="register__logo" src={logo} alt="Логотип"/>
             </Link>
             {/*<img onClick={() => navigate("/")} className="login__logo" src={logo} alt="Логотип"/>*/}
             <h2 className="login__title">Рады видеть!</h2>
@@ -64,6 +64,7 @@ function Login({onAuth, infoMessage}) {
                 >
               {errors.password}
             </span>
+                <p className='login__info-message'>{infoMessage}</p>
                 <button className="login__button" type="submit">Войти</button>
             </form>
             <p className="login__text">Ещё не зарегистрированы? <a className="login__link"

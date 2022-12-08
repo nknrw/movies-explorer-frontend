@@ -95,7 +95,7 @@ export const addMovie = (movie, jwt) => {
       description: movie.description,
       nameRU: movie.nameRU,
       nameEN: movie.nameEN,
-      trailer: movie.trailer,
+      trailerLink: movie.trailerLink,
       // image: movie.image,
       // thumbnail: movie.thumbnail,
       image: `https://api.nomoreparties.co${movie.image.url}`,
