@@ -27,7 +27,7 @@ const Profile = ({onEditProfile, signOut, infoMessage}) => {
     }, [currentUser, resetForm]);
 
     useEffect(() => {
-        if ((name !== currentUser.name || email !== currentUser.email) && isValid) {
+        if ((name === currentUser.name && email === currentUser.email) && isValid) {
             setButtonDisabled(true);
         } else {
             setButtonDisabled(false);
@@ -59,7 +59,7 @@ const Profile = ({onEditProfile, signOut, infoMessage}) => {
                   onSubmit={onFormSubmit}
                   id='profile'>
 
-                <h2 className='profile__title'>Привет,{currentUser.name}!</h2>
+                <h2 className='profile__title'>Привет, {currentUser.name}!</h2>
                 <div className='profile__fieldset'>
                     <label className='profile__label'>Имя
                         <input
@@ -86,7 +86,7 @@ const Profile = ({onEditProfile, signOut, infoMessage}) => {
                             className='profile__input'
                             type='email'
                             name='email'
-                            placeholder='pochta@yandex.ru'
+                            placeholder='Email'
                             // minLength={2}
                             // maxLength={30}
                             required={true}
@@ -108,7 +108,7 @@ const Profile = ({onEditProfile, signOut, infoMessage}) => {
                 <button
                     className={`profile__button profile__button-edit' ${buttonDisabled && 'profile__button-edit_disabled'}`}
                     type={'submit'}
-                    disabled={!buttonDisabled}>
+                    disabled={buttonDisabled}>
                     Редактировать
                 </button>
 
@@ -116,7 +116,6 @@ const Profile = ({onEditProfile, signOut, infoMessage}) => {
                     className='profile__button profile__button-exit'
                     type='button'
                     onClick={signOut}>
-                    >
                     Выйти из аккаунта
                 </button>
             </form>
