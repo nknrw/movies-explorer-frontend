@@ -95,6 +95,9 @@
     /*.movies-card__img {*/
     /*    height: 190px;*/
     /*}*/
+    .movies-card__delete {
+        background:  url('../../images/movies-card-delete-button.svg') no-repeat;
+    }
 }
 
 @media (max-width: 320px) {

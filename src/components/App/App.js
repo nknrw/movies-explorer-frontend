@@ -91,7 +91,7 @@ function App() {
                 });
             if (localStorage.filteredMovies) {
                 // setFilteredMovies(JSON.parse(localStorage.getItem('filteredMovies')));
-                setSavedMovies(filteredMovies);
+                setMovies(filteredMovies);
             }
         }
     }, [loggedIn, filteredMovies])

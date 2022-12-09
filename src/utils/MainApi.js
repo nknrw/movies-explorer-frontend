@@ -115,5 +115,5 @@ export const deleteMovie = (movieId, jwt) => {
       'Authorization': `Bearer ${jwt}`,
     },
   })
-    .then(this._checkResponse);
+      .then((res) => _checkResponse(res));
 }

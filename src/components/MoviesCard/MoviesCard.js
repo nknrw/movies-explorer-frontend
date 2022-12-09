@@ -30,7 +30,7 @@ const MoviesCard = ({
     } else {
         onLike(movie);
     }
-
+    console.log();
 }
     function handleDislike() {
     onDislike(movie)

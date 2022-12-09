@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: исправить стили фильмов/сохраненных фильмов">
+    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: редактирование профиля">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/MainApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/MainApi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +143,8 @@
       <workItem from="1670536637642" duration="110000" />
       <workItem from="1670536935334" duration="52000" />
       <workItem from="1670591341474" duration="4011000" />
-      <workItem from="1670604570535" duration="1998000" />
+      <workItem from="1670604570535" duration="3005000" />
+      <workItem from="1670613859354" duration="2336000" />
     </task>
     <task id="LOCAL-00001" summary="feat: бургер меню и карточки фильмов">
       <created>1669785969879</created>
@@ -227,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670595539305</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix: редактирование профиля">
+      <created>1670607201091</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670607201091</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +279,7 @@
     <MESSAGE value="feat: поиск фильмов" />
     <MESSAGE value="feat: сохраненные фильмы кое-как без стилей" />
     <MESSAGE value="fix: исправить стили фильмов/сохраненных фильмов" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: исправить стили фильмов/сохраненных фильмов" />
+    <MESSAGE value="fix: редактирование профиля" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: редактирование профиля" />
   </component>
 </project>
