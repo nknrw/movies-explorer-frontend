@@ -21,7 +21,7 @@ const MoviesCardList = ({
     const getCards = (windowSize) => {
         if (windowSize > 1200) {
             return {first: 12, extra: 3};
-        } else if (windowSize > 785) {
+        } else if (windowSize > 700) {
             return {first: 12, extra: 2};
         }
         return {first: 12, extra: 1};
@@ -64,7 +64,7 @@ const MoviesCardList = ({
     if(location.pathname === '/movies') {
         return (
             <section className='movies-cards-list'>
-                {/*<ul className='movies-cards-list__list'>*/}
+                <div className='movies-cards-list__container'>
                     {movies.length ? (
                         moviesToShow.map((movie) =>
                             <MoviesCard
@@ -82,7 +82,7 @@ const MoviesCardList = ({
                         </p>
                     )
                     }
-                {/*</ul>*/}
+                </div>
 
                 <button
                     className={`movies-card__button-more ${
@@ -97,8 +97,8 @@ const MoviesCardList = ({
         )
     } else if (location.pathname === '/saved-movies') {
         return (
-            <section className='movies-card__list'>
-                {/*<ul className='movies-card-list__list'>*/}
+            <section className='movies-cards-list'>
+                <div className='movies-cards-list__container'>
                     {movies.length ? (
                         moviesToShow.map((movie) =>
                             <MoviesCard
@@ -116,7 +116,7 @@ const MoviesCardList = ({
                             По вашему запросу ничего не найдено
                         </p>
                     )}
-                {/*</ul>*/}
+                </div>
             </section>
         )
     }
