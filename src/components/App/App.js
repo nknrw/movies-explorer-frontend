@@ -16,8 +16,6 @@ import Profile from '../Profile/Profile';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
 import NotFound from '../NotFound/NotFound';
-// import { addMovie } from "../../utils/MainApi";
-
 
 function App() {
     const history = useHistory();
@@ -39,11 +37,6 @@ function App() {
         localStorage.getItem('searchKeyword') || ''
     );
 
-    // // вот тут разобаться с роутингом = это по-новому 6-й версии
-    // const { pathname } = useLocation();
-    // const isHeaderVisible = matchPath({ path: '/', exact: true }, pathname) || matchPath({ path: '/movies', exact: true }, pathname) || matchPath({ path: '/saved-movies', exact: true }, pathname) || matchPath({ path: '/profile', exact: true }, pathname);
-    // const isFooterVisible = matchPath({ path: '/', exact: true }, pathname) || matchPath({ path: '/movies', exact: true }, pathname) || matchPath({ path: '/saved-movies', exact: true }, pathname);
-
     const hideHeader = ['/not-found', '/signup', '/signin'];
     const hideFooter = ['/not-found','/profile', '/signup', '/signin'];
 
@@ -54,9 +47,6 @@ function App() {
     useEffect(() => {
 
         if (localStorage.getItem('jwt')) {
-            // проверяем, есть ли токен в localStorage = потом удалить надо
-            // console.log('log from use effect');
-            // console.log(localStorage.getItem('jwt'));
 
             mainApi
                 .getUserInfo(localStorage.getItem('jwt'))
@@ -70,9 +60,6 @@ function App() {
 
     useEffect(() => {
         if (loggedIn) {
-            // проверяем, есть ли токен в localStorage = потом удалить надо
-            // console.log('log from use effect');
-            // console.log(localStorage.getItem('jwt'));
 
             mainApi
                 .getUserInfo(localStorage.getItem('jwt'))
@@ -90,7 +77,6 @@ function App() {
                     console.log(err);
                 });
             if (localStorage.filteredMovies) {
-                // setFilteredMovies(JSON.parse(localStorage.getItem('filteredMovies')));
                 setMovies(filteredMovies);
             }
         }
@@ -140,7 +126,6 @@ function App() {
             })
     }
 
-    // поиск фильмов по ключевому слову в регистронезависимом режиме
     const searchMovies = (movie, name) => {
         return movie.filter((movie) =>
             movie.nameRU.toLowerCase().includes(name.toLowerCase())
@@ -178,7 +163,6 @@ function App() {
         history.push('/');
     }
 
-    // сохранение фильма в личном кабинете пользователя и в localStorage
     const handleSaveMovie = (movie) => {
         mainApi
             .addMovie(movie, localStorage.getItem('jwt'))
@@ -209,7 +193,6 @@ function App() {
             });
     }
 
-
     return (
         <CurrentUserContext.Provider
             value={currentUser}>
@@ -222,7 +205,6 @@ function App() {
             <Switch>
                 <Route exact path="/">
                     <Main />
-                    {/*<Main loggedIn={loggedIn}/>*/}
                 </Route>
 
                 <Route path='/signup'>
@@ -264,7 +246,6 @@ function App() {
                     savedMovies={savedMovies}
                     setKeyword={setSearchKeyword}
                 >
-{/*<SavedMovies loggedIn={loggedIn} />*/}
                 </ProtectedRoute>
 
                 <ProtectedRoute
@@ -291,5 +272,3 @@ function App() {
 }
 
 export default App;
-
-// удалил стары ретюрн

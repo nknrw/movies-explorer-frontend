@@ -50,8 +50,6 @@
     border-bottom: 1px solid #000000;
 }
 
-
-
 .register__button {
     width: 100%;
     height: 45px;
@@ -64,7 +62,6 @@
     margin: 128px 0 0 0;
     cursor: pointer;
     transition: .5s;
-
 }
 
 .register__button--disabled {
@@ -73,18 +70,6 @@
     color: #A0A0A0;
     cursor: not-allowed;
 }
-
-/*.register__button:hover {*/
-/*    background-color: #ffffff;*/
-/*    color: #000000;*/
-/*    box-shadow: 10px 10px 20px #808080;*/
-/*    transition: .5s;*/
-/*}*/
-
-/*.register__button:active {*/
-/*    box-shadow: inset 5px 5px 10px #808080;*/
-/*    transition: .5s;*/
-/*}*/
 
 .register__text {
     font-size: 12px;

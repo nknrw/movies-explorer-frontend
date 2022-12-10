@@ -65,7 +65,6 @@ export const setUserInfo = (data, jwt) => {
     .then((res) => _checkResponse(res));
 }
 
-// получение списка фильмов с сервера по токену пользователя
 export const getMovies = (jwt) => {
   return fetch(`${baseUrl}/movies`, {
     credentials: 'include',
@@ -77,7 +76,6 @@ export const getMovies = (jwt) => {
     .then((res) => _checkResponse(res));
 }
 
-// добавление фильма в сохраненные на сервер по токену пользователя
 export const addMovie = (movie, jwt) => {
   return fetch(`${baseUrl}/movies`, {
     method: 'POST',
@@ -96,8 +94,6 @@ export const addMovie = (movie, jwt) => {
       nameRU: movie.nameRU,
       nameEN: movie.nameEN,
       trailerLink: movie.trailerLink,
-      // image: movie.image,
-      // thumbnail: movie.thumbnail,
       image: `https://api.nomoreparties.co${movie.image.url}`,
       thumbnail: `https://api.nomoreparties.co${movie.image.formats.thumbnail.url}`,
     })
@@ -105,7 +101,6 @@ export const addMovie = (movie, jwt) => {
     .then((res) => _checkResponse(res));
 }
 
-// удаление фильма из сохраненных на сервер по токену пользователя
 export const deleteMovie = (movieId, jwt) => {
   return fetch(`${baseUrl}/movies/${movieId}`, {
     method: 'DELETE',

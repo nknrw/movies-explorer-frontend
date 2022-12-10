@@ -28,7 +28,7 @@ const SearchForm = ({ onSubmit, checkClick, searchKeyword, isShort }) => {
         <section className="search-form">
             <form className="search-form__container" onSubmit={handleSearch}>
                 <input
-                    type="search"
+                    type="text"
                     className="search-form__input"
                     placeholder="Фильм"
                     required={true}

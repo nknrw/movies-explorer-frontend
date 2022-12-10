@@ -34,24 +34,6 @@ const Profile = ({onEditProfile, signOut, infoMessage}) => {
         }
     }, [email, isValid, name, currentUser.email, currentUser.name]);
 
-    // function Button() {
-    //     if (isEditProfile === true) {
-    //         return (<button
-    //             className='profile__button profile__button-submit'
-    //             type={'submit'}>
-    //             Сохранить
-    //         </button>)
-    //     } else {
-    //         return (
-    //             <button
-    //                 className='profile__button profile__button-edit'
-    //                 type={'button'}
-    //                 onClick={onEditProfile}>
-    //                 Редактировать
-    //             </button>)
-    //     }
-    // }
-
     return (
         <section className='profile'>
             <form className='profile__form'
@@ -87,8 +69,6 @@ const Profile = ({onEditProfile, signOut, infoMessage}) => {
                             type='email'
                             name='email'
                             placeholder='Email'
-                            // minLength={2}
-                            // maxLength={30}
                             required={true}
                             value={email || ''}
                             onChange={handleChange}
@@ -104,7 +84,6 @@ const Profile = ({onEditProfile, signOut, infoMessage}) => {
 
                 </div>
                 <p className='profile__info-message'>{infoMessage}</p>
-                {/*<Button/>*/}
                 <button
                     className={`profile__button profile__button-edit' ${buttonDisabled && 'profile__button-edit_disabled'}`}
                     type={'submit'}

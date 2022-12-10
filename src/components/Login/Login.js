@@ -1,12 +1,10 @@
 import React from "react";
-// import {Link} from "react-router-dom";
 import "./Login.css";
 import logo from "../../images/logo.svg";
 import { Link } from "react-router-dom";
 import { FormValidation } from "../../utils/FormValidation";
 
 function Login({onAuth, infoMessage}) {
-    // const navigate = useHistory();
 
     const {values, handleChange, errors, isValid, resetForm} = FormValidation({});
     const {email, password} = values;
@@ -22,7 +20,6 @@ function Login({onAuth, infoMessage}) {
             <Link to="/">
                 <img className="register__logo" src={logo} alt="Логотип"/>
             </Link>
-            {/*<img onClick={() => navigate("/")} className="login__logo" src={logo} alt="Логотип"/>*/}
             <h2 className="login__title">Рады видеть!</h2>
 
             <form className="login__form"
@@ -33,9 +30,7 @@ function Login({onAuth, infoMessage}) {
                 <input className="login__input"
                        type="email"
                        name="email"
-                       placeholder="pochta@yandex.ru"
-                       // minLength="2"
-                       // maxLength="30"
+                       placeholder="Email"
                        required={true}
                        value={email || ""}
                        onChange={handleChange}

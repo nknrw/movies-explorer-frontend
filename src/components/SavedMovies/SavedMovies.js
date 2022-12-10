@@ -53,13 +53,6 @@ const SavedMovies = ({
                 searchKeyword={searchKeyword}
                 isShort={checkActive}
             />
-            {/*{isLoading && <Preloader />}*/}
-            {/*{noResults && (*/}
-            {/*    <MoviesCardList*/}
-            {/*        movies={filterMoviesShort(filterMovies)}*/}
-            {/*        onDislike={onDislike}*/}
-            {/*    />*/}
-            {/*)}*/}
             {isLoading && <Preloader/>}
             {!isLoading && (
                 <MoviesCardList
@@ -73,15 +66,3 @@ const SavedMovies = ({
     );
 }
  export default SavedMovies;
-
-
-// function SavedMovies() {
-//     return (
-//         <section className="saved-movies">
-//             <SearchForm />
-//             <MoviesCardList />
-//         </section>
-//     )
-// }
-//
-// export default SavedMovies;

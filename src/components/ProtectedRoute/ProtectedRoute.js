@@ -11,12 +11,3 @@ export default function ProtectedRoute({component: Component, ...props}) {
         </Route>
     )
 }
-// const ProtectedRoute = ({ component: Component, loggedIn, ...props }) => {
-//     return (
-//         <Route>
-//             {loggedIn ? <Component {...props} /> : <Redirect to="/" />}
-//         </Route>
-//     );
-// }
-
-// export default ProtectedRoute;

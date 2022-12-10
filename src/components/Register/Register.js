@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import {FormValidation} from "../../utils/FormValidation";
 
 function Register({onAuth, infoMessage}) {
-    // const navigate = useHistory();
 
     const {values, handleChange, errors, isValid, resetForm} = FormValidation({});
     const {name, email, password} = values;
@@ -22,7 +21,6 @@ function Register({onAuth, infoMessage}) {
                 <img className="register__logo" src={logo} alt="Логотип"/>
                 </Link>
 
-            {/*<img onClick={() => navigate("/")} className="register__logo" src={logo} alt="Логотип"/>*/}
             <h2 className="register__title">Добро пожаловать!</h2>
             <form className="register__form"
                   onSubmit={handleSubmit}
@@ -52,9 +50,7 @@ function Register({onAuth, infoMessage}) {
                     className="register__input"
                     type="email"
                     name="email"
-                    placeholder="pochta@yandex.ru"
-                    // minLength="2"
-                    // maxLength="30"
+                    placeholder="Email"
                     required={true}
                     value={email || ""}
                     onChange={handleChange}

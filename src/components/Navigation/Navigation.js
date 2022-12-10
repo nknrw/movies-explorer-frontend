@@ -3,12 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import "./Navigation.css";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 
-// const [loggedIn, setLoggedIn] = React.useState(false);
-
-// прописать если залогинен то показывать навигацию с сохраненными фильмами и аккаунтом, а если нет то показывать регистрацию и войти
-
 function Navigation({ loggedIn }) {
-    // const location = useLocation();
 
     const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = React.useState(false);
     const handleHamburgerMenuOpen = () => {

@@ -4,11 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: редактирование профиля">
+    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: правки 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HamburgerMenu/HamburgerMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HamburgerMenu/HamburgerMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Movies/Movies.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movies/Movies.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Movies/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movies/Movies.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCard/MoviesCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Portfolio/Portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Portfolio/Portfolio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Preloader/Preloader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Preloader/Preloader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProtectedRoute/ProtectedRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProtectedRoute/ProtectedRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Register/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/Register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SavedMovies/SavedMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SavedMovies/SavedMovies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Techs/Techs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Techs/Techs.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/MainApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/MainApi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +162,10 @@
       <workItem from="1670536935334" duration="52000" />
       <workItem from="1670591341474" duration="4011000" />
       <workItem from="1670604570535" duration="3005000" />
-      <workItem from="1670613859354" duration="2336000" />
+      <workItem from="1670613859354" duration="3389000" />
+      <workItem from="1670684222999" duration="1160000" />
+      <workItem from="1670693942116" duration="2805000" />
+      <workItem from="1670700148506" duration="3434000" />
     </task>
     <task id="LOCAL-00001" summary="feat: бургер меню и карточки фильмов">
       <created>1669785969879</created>
@@ -237,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670607201091</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix: правки 1">
+      <created>1670616697486</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670616697486</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +308,7 @@
     <MESSAGE value="feat: сохраненные фильмы кое-как без стилей" />
     <MESSAGE value="fix: исправить стили фильмов/сохраненных фильмов" />
     <MESSAGE value="fix: редактирование профиля" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: редактирование профиля" />
+    <MESSAGE value="fix: правки 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: правки 1" />
   </component>
 </project>

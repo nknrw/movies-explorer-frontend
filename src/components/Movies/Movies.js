@@ -71,15 +71,3 @@ const Movies = ({
 };
 
 export default Movies;
-
-// function Movies() {
-//     return (
-//         <section className="movies">
-//             <SearchForm />
-//             <MoviesCardList />
-//             {/*<button className="movies__more-button">Ещё</button>*/}
-//         </section>
-//     )
-// }
-// }
-

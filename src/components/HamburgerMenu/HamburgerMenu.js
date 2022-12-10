@@ -17,8 +17,6 @@ function HamburgerMenu({open, close}) {
                     <div className="hamburger-menu__profile">
                         <Link to="/profile" className="hamburger-menu__link">Аккаунт</Link>
                         <Link to="/profile" className="hamburger-menu__profile-icon">
-                            {/*<Link to="/profile" className="hamburger-menu__link_profile">*/}
-                            {/*    <img src={profileIcon} alt="Аккаунт" className="hamburger-menu__profile-icon"/>*/}
                         </Link>
                     </div>
 

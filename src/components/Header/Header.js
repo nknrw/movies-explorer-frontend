@@ -6,13 +6,11 @@ import logo from "../../images/logo.svg";
 
 function Header({ loggedIn }) {
     const location = useLocation();
-    // const navigate = useHistory();
     return (
         <header className={location.pathname === '/' ? `header header_main` : `header`}>
             <Link to="/">
                 <img src={logo} alt="Логотип" className="header__logo" />
             </Link>
-            {/*<img onClick={() => navigate("/")} src={logo} alt="Логотип" className="header__logo"/>*/}
             <Navigation
                 loggedIn={loggedIn}
             />
