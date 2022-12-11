@@ -37,15 +37,16 @@
 
 .movies-card__no-result {
     display: none;
-}
-
-.movies-card__no-result_active {
-    display: block;
     padding: 15px 0;
     color: #A0A0A0;
     text-align: center;
     font-size: 18px;
     margin: 0;
+}
+
+.movies-card__no-result_active {
+    display: block;
+
 }
 
 @media (max-width: 768px) {

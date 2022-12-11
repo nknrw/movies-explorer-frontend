@@ -76,7 +76,7 @@ const MoviesCardList = ({
                             />
                         )
                     ) : (
-                        <p className={`'movies-card__no-result'${searchKeyword &&
+                        <p className={`movies-card__no-result ${searchKeyword &&
                         'movies-card__no-result_active'}`}
                         >По вашему запросу ничего не найдено
                         </p>
