@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: правки 3">
+    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: еще правки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +146,8 @@
       <workItem from="1670700148506" duration="5778000" />
       <workItem from="1670748381542" duration="1938000" />
       <workItem from="1670756228434" duration="2382000" />
-      <workItem from="1670767396601" duration="1230000" />
+      <workItem from="1670767396601" duration="2571000" />
+      <workItem from="1670783279374" duration="655000" />
     </task>
     <task id="LOCAL-00001" summary="feat: бургер меню и карточки фильмов">
       <created>1669785969879</created>
@@ -260,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670750085269</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix: еще правки">
+      <created>1670769502087</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1670769502087</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +314,7 @@
     <MESSAGE value="fix: правки 1" />
     <MESSAGE value="fix: правки 2" />
     <MESSAGE value="fix: правки 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: правки 3" />
+    <MESSAGE value="fix: еще правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: еще правки" />
   </component>
 </project>
