@@ -19,7 +19,7 @@ export const signup = ({ name, email, password }) => {
   return fetch(`${baseUrl}/signup`, {
     method: 'POST',
     credentials: 'include',
-    headers,
+    headers: headers,
     body: JSON.stringify({ name, email, password })
   })
     .then((res) => _checkResponse(res));
@@ -30,7 +30,7 @@ export const signin = ({ email, password }) => {
   return fetch(`${baseUrl}/signin`, {
     method: 'POST',
     credentials: 'include',
-    headers,
+    headers: headers,
     body: JSON.stringify({ email, password })
   })
     .then((res) => _checkResponse(res));

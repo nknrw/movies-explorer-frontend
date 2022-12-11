@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: правки 2">
+    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: правки 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/MainApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/MainApi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +144,9 @@
       <workItem from="1670684222999" duration="1160000" />
       <workItem from="1670693942116" duration="2805000" />
       <workItem from="1670700148506" duration="5778000" />
-      <workItem from="1670748381542" duration="1093000" />
+      <workItem from="1670748381542" duration="1938000" />
+      <workItem from="1670756228434" duration="2382000" />
+      <workItem from="1670767396601" duration="1230000" />
     </task>
     <task id="LOCAL-00001" summary="feat: бургер меню и карточки фильмов">
       <created>1669785969879</created>
@@ -252,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670708019187</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix: правки 3">
+      <created>1670750085269</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1670750085269</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +305,7 @@
     <MESSAGE value="fix: редактирование профиля" />
     <MESSAGE value="fix: правки 1" />
     <MESSAGE value="fix: правки 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: правки 2" />
+    <MESSAGE value="fix: правки 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: правки 3" />
   </component>
 </project>
