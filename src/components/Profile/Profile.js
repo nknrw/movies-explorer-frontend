@@ -52,7 +52,7 @@ const Profile = ({onEditProfile, signOut, infoMessage}) => {
                             minLength={2}
                             maxLength={30}
                             required={true}
-                            value={name || ''}
+                            value={name}
                             onChange={handleChange}
                             onFocus={handleFocus}
                         />
@@ -70,7 +70,7 @@ const Profile = ({onEditProfile, signOut, infoMessage}) => {
                             name='email'
                             placeholder='Email'
                             required={true}
-                            value={email || ''}
+                            value={email}
                             onChange={handleChange}
                             onFocus={handleFocus}
                         />

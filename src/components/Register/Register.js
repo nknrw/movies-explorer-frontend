@@ -3,6 +3,7 @@ import "./Register.css";
 import logo from "../../images/logo.svg";
 import { Link } from "react-router-dom";
 import {FormValidation} from "../../utils/FormValidation";
+import {EMAIL_PATTERN} from "../../utils/constants";
 
 function Register({onAuth, infoMessage}) {
 
@@ -52,6 +53,8 @@ function Register({onAuth, infoMessage}) {
                     name="email"
                     placeholder="Email"
                     required={true}
+                    pattern={EMAIL_PATTERN}
+                    autoComplete="off"
                     value={email || ""}
                     onChange={handleChange}
                 />

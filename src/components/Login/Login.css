@@ -65,6 +65,13 @@
 
 }
 
+.login__button_disabled {
+    background-color: #fff;
+    border: 1px solid #A0A0A0;
+    color: #A0A0A0;
+    cursor: not-allowed;
+}
+
 .login__button:hover {
     background-color: #ffffff;
     color: #000000;

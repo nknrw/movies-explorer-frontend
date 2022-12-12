@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "./SearchForm.css";
 import FilterCheckbox from "../FilterCheckbox/FilterCheckbox";
+import {moviesApi} from "../../utils/MoviesApi";
 
-const SearchForm = ({ onSubmit, checkClick, searchKeyword, isShort }) => {
+const SearchForm = ({ onSubmit, checkClick, searchKeyword, isShort, setAllMovies }) => {
 
     const location = useLocation();
 
@@ -13,7 +14,7 @@ const SearchForm = ({ onSubmit, checkClick, searchKeyword, isShort }) => {
         if (searchKeyword && location.pathname === "/movies") {
             setMovies(searchKeyword);
         }
-    }, []);
+    }, [searchKeyword, location.pathname]);
 
     const handleInputChange = (event) => {
         setMovies(event.target.value);

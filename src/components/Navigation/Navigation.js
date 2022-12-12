@@ -1,10 +1,10 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import "./Navigation.css";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 
 function Navigation({ loggedIn }) {
-
+    const location = useLocation();
     const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = React.useState(false);
     const handleHamburgerMenuOpen = () => {
         setIsHamburgerMenuOpen(!isHamburgerMenuOpen);
@@ -19,9 +19,9 @@ function Navigation({ loggedIn }) {
             </nav>
             ) : (
             <nav className="navigation__list">
-                    <NavLink to="/movies" className="navigation__link">Фильмы</NavLink>
-                    <NavLink to="/saved-movies" className="navigation__link">Сохранённые фильмы</NavLink>
-                    <NavLink to="/profile" className="navigation__link">Аккаунт</NavLink>
+                    <NavLink to="/movies" className={location.pathname === '/movies' ? 'navigation__link navigation__link_active' : 'navigation__link'}>Фильмы</NavLink>
+                    <NavLink to="/saved-movies" className={location.pathname === '/saved-movies' ? 'navigation__link navigation__link_active' : 'navigation__link'}>Сохранённые фильмы</NavLink>
+                    <NavLink to="/profile" className={location.pathname === '/profile' ? 'navigation__link navigation__link_active' : 'navigation__link'}>Аккаунт</NavLink>
                     <NavLink to="/profile" className="navigation__link navigation__link_profile"/>
                 <div className="navigation__menu">
                     <button className="navigation__menu-button" onClick={handleHamburgerMenuOpen}/>
