@@ -3,6 +3,7 @@ import Preloader from "../Preloader/Preloader";
 import SearchForm from "../SearchForm/SearchForm";
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
 import "./SavedMovies.css";
+import {moviesApi} from "../../utils/MoviesApi";
 
 const SavedMovies = ({
     isLoading,
@@ -20,11 +21,11 @@ const SavedMovies = ({
 
     const checkClick = () => {
         setCheckActive(!checkActive);
-        localStorage.setItem("checkBox", !checkActive);
+        localStorage.setItem("checkBoxSaved", !checkActive);
     };
 
     useEffect(() => {
-        const checkLocal = localStorage.getItem("checkBox");
+        const checkLocal = localStorage.getItem("checkBoxSaved");
         if (checkLocal === "true") {
             setIsShort(isShort);
             setCheckActive(true);
