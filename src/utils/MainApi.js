@@ -48,6 +48,7 @@ export const getUserInfo = (jwt) => {
     .then((res) => _checkResponse(res));
 }
 
+
 // изменение информации пользователя на сервере по токену
 export const setUserInfo = (data, jwt) => {
   return fetch(`${baseUrl}/users/me`, {

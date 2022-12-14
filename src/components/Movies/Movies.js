@@ -35,17 +35,17 @@ const Movies = ({
         }
     }, [isShort]);
 
-    useEffect(() => {
-        if (!localStorage.loadedMovies) {
-            moviesApi
-                .getMoviesAll()
-                .then((data) => {
-                    setAllMovies(data);
-                    localStorage.setItem('loadedMovies', JSON.stringify(data));
-                })
-                .catch((err) => console.log(err));
-        }
-    }, [setAllMovies]);
+    // useEffect(() => {
+    //     if (!localStorage.loadedMovies) {
+    //         moviesApi
+    //             .getMoviesAll()
+    //             .then((data) => {
+    //                 setAllMovies(data);
+    //                 localStorage.setItem('loadedMovies', JSON.stringify(data));
+    //             })
+    //             .catch((err) => console.log(err));
+    //     }
+    // }, [setAllMovies]);
 
     return (
         <>

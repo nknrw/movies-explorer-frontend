@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: правки правки">
+    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: какие-то правки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Movies/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movies/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SavedMovies/SavedMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SavedMovies/SavedMovies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm/SearchForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/MainApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/MainApi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +159,10 @@
       <workItem from="1670947891917" duration="953000" />
       <workItem from="1670953985661" duration="613000" />
       <workItem from="1670958268924" duration="1441000" />
-      <workItem from="1670965784628" duration="3583000" />
+      <workItem from="1670965784628" duration="4094000" />
+      <workItem from="1670974452305" duration="1210000" />
+      <workItem from="1671039062154" duration="2305000" />
+      <workItem from="1671044754574" duration="8363000" />
     </task>
     <task id="LOCAL-00001" summary="feat: бургер меню и карточки фильмов">
       <created>1669785969879</created>
@@ -300,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670884837723</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fix: какие-то правки">
+      <created>1670970132019</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1670970132019</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +361,7 @@
     <MESSAGE value="fix: ридми" />
     <MESSAGE value="fix: ридми 2" />
     <MESSAGE value="fix: правки правки" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: правки правки" />
+    <MESSAGE value="fix: какие-то правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: какие-то правки" />
   </component>
 </project>

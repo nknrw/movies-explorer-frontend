@@ -16,6 +16,8 @@ import Profile from '../Profile/Profile';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
 import NotFound from '../NotFound/NotFound';
+import {moviesApi} from "../../utils/MoviesApi";
+
 
 function App() {
     const history = useHistory();
@@ -28,10 +30,10 @@ function App() {
     const [savedMovies, setSavedMovies] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [allMovies, setAllMovies] = useState(
-        JSON.parse(localStorage.getItem('loadedMovies')) || []
+        // JSON.parse(localStorage.getItem('loadedMovies')) || []
     );
     const [filteredMovies, setFilteredMovies] = useState(
-        JSON.parse(localStorage.getItem('filteredMovies')) || []
+        // JSON.parse(localStorage.getItem('filteredMovies')) || []
     );
     const [searchKeyword, setSearchKeyword] = useState(
         localStorage.getItem('searchKeyword') || ''
@@ -63,7 +65,6 @@ function App() {
 
     useEffect(() => {
         if (loggedIn) {
-
             mainApi
                 .getUserInfo(localStorage.getItem('jwt'))
                 .then((user) => setCurrentUser(user))
@@ -79,11 +80,11 @@ function App() {
                 .catch((err) => {
                     console.log(err);
                 });
-            if (localStorage.filteredMovies) {
-                setMovies(filteredMovies);
-            }
+            // if (localStorage.filteredMovies) {
+            //     setMovies(filteredMovies);
+            // }
         }
-    }, [loggedIn, filteredMovies])
+    }, [loggedIn])
 
     const onRegister = ({name, password, email}) => {
         mainApi
@@ -122,27 +123,91 @@ function App() {
             .setUserInfo (user, localStorage.getItem('jwt'))
             .then ((userInfo) => {
                 setProfileMessage('Данные пользователя успешно обновлены');
-                setCurrentUser(userInfo);
+                setCurrentUser(userInfo.data);
             })
             .catch ((err) => {
                 setProfileMessage('Ошибка редактирования данных профиля. Попробуйте ещё раз.');
             })
     }
 
-    const searchMovies = (movie, name) => {
-        return movie.filter((movie) =>
-            movie.nameRU.toLowerCase().includes(name.toLowerCase())
-        );
-    }
-    const handleSearchMovies = (name) => {
+
+    // ПРАКТИЧЕСКИ РАБОТАЕТ, НЕ ФИЛЬТРУЕТ
+
+    // const handleSearchMovies = (keyword) => {
+    //     setIsLoading(true);
+    //     moviesApi
+    //         .getMoviesAll(keyword)
+    //         .then((res) => {
+    //             setMovies(res);
+    //             setAllMovies(res);
+    //             localStorage.setItem('loadedMovies', JSON.stringify(res));
+    //             setFilteredMovies(res);
+    //             localStorage.setItem('filteredMovies', JSON.stringify(res));
+    //             setSearchKeyword(keyword);
+    //             localStorage.setItem('searchKeyword', keyword);
+    //             setIsLoading(false);
+    //         })
+    //         .catch((err) => {
+    //             console.log(err);
+    //         })
+    // }
+
+
+    // const handleSearchMovies = (name) => {
+    //     setIsLoading(true);
+    //     const newMovies = searchMovies(allMovies, name);
+    //     setMovies(newMovies);
+    //     localStorage.setItem('filteredMovies', JSON.stringify(newMovies));
+    //     setFilteredMovies(newMovies);
+    //     localStorage.setItem('searchKeyword', name);
+    //     setSearchKeyword(name);
+    //     setTimeout(() => setIsLoading(false), 1000);
+    // }
+
+    // РАБОТАЕТ СО ВТОРОГО НАЖАТИЯ
+
+    // const handleSearchMovies = async (name) => {
+    //     setIsLoading(true);
+    //     if (!localStorage.loadedMovies) {
+    //         const movies = await moviesApi.getMoviesAll();
+    //         setAllMovies(movies);
+    //         localStorage.setItem('loadedMovies', JSON.stringify(movies));
+    //     } else {
+    //         setAllMovies(JSON.parse(localStorage.getItem('loadedMovies')));
+    //     }
+    //     const newMovies = searchMovies(allMovies, name);
+    //     setMovies(newMovies);
+    //     localStorage.setItem('filteredMovies', JSON.stringify(newMovies));
+    //     setFilteredMovies(newMovies);
+    //     // localStorage.setItem('searchKeyword', name);
+    //     setSearchKeyword(name);
+    //     setTimeout(() => setIsLoading(false), 1000);
+    //     console.log(newMovies);
+    // }
+
+    const handleSearchMovies = (keyword) => {
         setIsLoading(true);
-        const newMovies = searchMovies(allMovies, name);
-        setMovies(newMovies);
-        localStorage.setItem('filteredMovies', JSON.stringify(newMovies));
-        setFilteredMovies(newMovies);
-        localStorage.setItem('searchKeyword', name);
-        setSearchKeyword(name);
-        setTimeout(() => setIsLoading(false), 1000);
+        setSearchKeyword(keyword);
+        // localStorage.setItem('searchKeyword', keyword);
+        moviesApi
+            .getMoviesAll()
+            .then((res) => {
+                const allMovies = res;
+                localStorage.setItem('loadedMovies', JSON.stringify(allMovies));
+                // setAllMovies(allMovies);
+                setAllMovies(JSON.parse(localStorage.getItem('loadedMovies')));
+                const filteredMovies = allMovies.filter((movie) => {
+                    return movie.nameRU.toLowerCase().includes(keyword.toLowerCase());
+                });
+                localStorage.setItem('filteredMovies', JSON.stringify(filteredMovies));
+                setFilteredMovies(filteredMovies);
+                setMovies(filteredMovies);
+                setIsLoading(false);
+                console.log(filteredMovies);
+            })
+            .catch((err) => {
+                console.log(err);
+            })
     }
 
     const signOut = () => {
@@ -254,7 +319,7 @@ function App() {
                         exact
                         component={Movies}
                         loggedIn={loggedIn}
-                        isLoading={isLoading}
+                        // isLoading={isLoading}
                         movies={movies}
                         onSubmit={handleSearchMovies}
                         onLike={handleSaveMovie}
@@ -270,7 +335,7 @@ function App() {
                         exact
                         component={SavedMovies}
                         loggedIn={loggedIn}
-                        isLoading={isLoading}
+                        // isLoading={isLoading}
                         onDislike={handleDeleteMovie}
                         savedMovies={savedMovies}
                         setKeyword={setSearchKeyword}
