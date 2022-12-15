@@ -2,7 +2,7 @@ import React, { useEffect, useCallback } from "react";
 import "./MoviesCardList.css";
 import MoviesCard from "../MoviesCard/MoviesCard";
 import {useLocation} from "react-router-dom";
-import {getCards} from "../../utils/constants";
+import {getCards} from "../../utils/GetCards";
 import Preloader from "../Preloader/Preloader";
 
 const MoviesCardList = ({

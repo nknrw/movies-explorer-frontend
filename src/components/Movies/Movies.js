@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./Movies.css";
 import SearchForm from "../SearchForm/SearchForm";
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
@@ -14,13 +14,18 @@ const Movies = ({
                     onDislike,
                     searchKeyword,
                 }) => {
-
     const [checkActive, setCheckActive] = useState(false);
     const [isShort, setIsShort] = useState(false);
     const checkClick = () => {
         setCheckActive(!checkActive);
         localStorage.setItem("checkBoxMovies", !checkActive);
-    }
+    };
+
+    useEffect(() => {
+        if (searchKeyword) {
+            onSubmit(searchKeyword);
+        }
+    }, []);
 
     const filterMoviesShort = (filterMovies) =>
         filterMovies.filter((m) => m.duration < 40);
@@ -41,7 +46,7 @@ const Movies = ({
                 searchKeyword={searchKeyword}
                 isShort={checkActive}
             />
-            {isLoading && <Preloader/>}
+            {isLoading && <Preloader />}
             {!isLoading && (
                 <MoviesCardList
                     movies={checkActive ? filterMoviesShort(movies) : movies}
