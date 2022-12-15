@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: еще фиксы">
-      <change afterPath="$PROJECT_DIR$/src/utils/GetCards.js" afterDir="false" />
+    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: очередные фиксы после проверки">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesCardList/MoviesCardList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +162,7 @@
       <workItem from="1671058321953" duration="614000" />
       <workItem from="1671060317133" duration="564000" />
       <workItem from="1671062138817" duration="3343000" />
-      <workItem from="1671127090038" duration="3971000" />
+      <workItem from="1671127090038" duration="4855000" />
     </task>
     <task id="LOCAL-00001" summary="feat: бургер меню и карточки фильмов">
       <created>1669785969879</created>
@@ -329,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671064914648</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="fix: очередные фиксы после проверки">
+      <created>1671133756309</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1671133756309</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,6 +385,7 @@
     <MESSAGE value="fix: какие-то правки" />
     <MESSAGE value="fix: исправить поиск и загрузку данных" />
     <MESSAGE value="fix: еще фиксы" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: еще фиксы" />
+    <MESSAGE value="fix: очередные фиксы после проверки" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: очередные фиксы после проверки" />
   </component>
 </project>
