@@ -172,7 +172,8 @@ function App() {
         localStorage.removeItem("filteredMovies");
         localStorage.removeItem("searchKeyword");
         localStorage.removeItem("loadedMovies");
-        localStorage.removeItem("checkBox");
+        localStorage.removeItem("checkBoxMovies");
+        localStorage.removeItem("checkBoxSaved");
         setLoggedIn(false);
         setCurrentUser({});
         setProfileMessage("");
