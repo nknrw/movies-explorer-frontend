@@ -29,12 +29,8 @@ function App() {
     const [movies, setMovies] = useState([]);
     const [savedMovies, setSavedMovies] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-    const [allMovies, setAllMovies] = useState(
-        // JSON.parse(localStorage.getItem('loadedMovies')) || []
-    );
-    const [filteredMovies, setFilteredMovies] = useState(
-        // JSON.parse(localStorage.getItem('filteredMovies')) || []
-    );
+    const [allMovies, setAllMovies] = useState([]);
+    const [filteredMovies, setFilteredMovies] = useState([]);
     const [searchKeyword, setSearchKeyword] = useState(
         localStorage.getItem('searchKeyword') || ''
     );
@@ -56,7 +52,6 @@ function App() {
                     setLoggedIn(true);
                     history.push(location.pathname);
                 })
-                // .catch((err) => console.log(err));
                 .catch((err) => {
                     if (err.status === 401) signOut();
                 })
@@ -80,9 +75,6 @@ function App() {
                 .catch((err) => {
                     console.log(err);
                 });
-            // if (localStorage.filteredMovies) {
-            //     setMovies(filteredMovies);
-            // }
         }
     }, [loggedIn])
 
@@ -131,60 +123,6 @@ function App() {
     }
 
 
-    // ПРАКТИЧЕСКИ РАБОТАЕТ, НЕ ФИЛЬТРУЕТ
-
-    // const handleSearchMovies = (keyword) => {
-    //     setIsLoading(true);
-    //     moviesApi
-    //         .getMoviesAll(keyword)
-    //         .then((res) => {
-    //             setMovies(res);
-    //             setAllMovies(res);
-    //             localStorage.setItem('loadedMovies', JSON.stringify(res));
-    //             setFilteredMovies(res);
-    //             localStorage.setItem('filteredMovies', JSON.stringify(res));
-    //             setSearchKeyword(keyword);
-    //             localStorage.setItem('searchKeyword', keyword);
-    //             setIsLoading(false);
-    //         })
-    //         .catch((err) => {
-    //             console.log(err);
-    //         })
-    // }
-
-
-    // const handleSearchMovies = (name) => {
-    //     setIsLoading(true);
-    //     const newMovies = searchMovies(allMovies, name);
-    //     setMovies(newMovies);
-    //     localStorage.setItem('filteredMovies', JSON.stringify(newMovies));
-    //     setFilteredMovies(newMovies);
-    //     localStorage.setItem('searchKeyword', name);
-    //     setSearchKeyword(name);
-    //     setTimeout(() => setIsLoading(false), 1000);
-    // }
-
-    // РАБОТАЕТ СО ВТОРОГО НАЖАТИЯ
-
-    // const handleSearchMovies = async (name) => {
-    //     setIsLoading(true);
-    //     if (!localStorage.loadedMovies) {
-    //         const movies = await moviesApi.getMoviesAll();
-    //         setAllMovies(movies);
-    //         localStorage.setItem('loadedMovies', JSON.stringify(movies));
-    //     } else {
-    //         setAllMovies(JSON.parse(localStorage.getItem('loadedMovies')));
-    //     }
-    //     const newMovies = searchMovies(allMovies, name);
-    //     setMovies(newMovies);
-    //     localStorage.setItem('filteredMovies', JSON.stringify(newMovies));
-    //     setFilteredMovies(newMovies);
-    //     // localStorage.setItem('searchKeyword', name);
-    //     setSearchKeyword(name);
-    //     setTimeout(() => setIsLoading(false), 1000);
-    //     console.log(newMovies);
-    // }
-
     const handleSearchMovies = (keyword) => {
         setIsLoading(true);
         setSearchKeyword(keyword);
@@ -203,7 +141,6 @@ function App() {
                 setFilteredMovies(filteredMovies);
                 setMovies(filteredMovies);
                 setIsLoading(false);
-                console.log(filteredMovies);
             })
             .catch((err) => {
                 console.log(err);
@@ -241,9 +178,6 @@ function App() {
                     JSON.stringify([data, ...savedMovies])
                 );
             })
-            // .catch((err) => {
-            //     console.log(err);
-            // });
             .catch((err) => {
                 if (err.status === 401) signOut();
             });
@@ -259,9 +193,6 @@ function App() {
                 );
                 setSavedMovies(newMovies);
             })
-            // .catch((err) => {
-            //     console.log(err);
-            // });
             .catch((err) => {
                 if (err.status === 401) signOut();
             });
@@ -301,25 +232,12 @@ function App() {
                         )}
                     </Route>
 
-                    {/*<Route path='/signup'>*/}
-                    {/*    <Register*/}
-                    {/*        onAuth={onRegister}*/}
-                    {/*        infoMessage={registerMessage}*/}
-                    {/*    />*/}
-                    {/*</Route>*/}
-
-                    {/*<Route path='/signin'>*/}
-                    {/*    <Login*/}
-                    {/*        onAuth={onLogin}*/}
-                    {/*        infoMessage={loginMessage}/>*/}
-                    {/*</Route>*/}
-
                     <ProtectedRoute
                         path='/movies'
                         exact
                         component={Movies}
                         loggedIn={loggedIn}
-                        // isLoading={isLoading}
+                        isLoading={isLoading}
                         movies={movies}
                         onSubmit={handleSearchMovies}
                         onLike={handleSaveMovie}
@@ -335,7 +253,7 @@ function App() {
                         exact
                         component={SavedMovies}
                         loggedIn={loggedIn}
-                        // isLoading={isLoading}
+                        isLoading={isLoading}
                         onDislike={handleDeleteMovie}
                         savedMovies={savedMovies}
                         setKeyword={setSearchKeyword}

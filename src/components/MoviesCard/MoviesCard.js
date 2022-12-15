@@ -12,8 +12,6 @@ const MoviesCard = ({
 
     const location = useLocation();
 
-    // const durationTime =`${Math.floor(movie.duration / 60)}ч ${movie.duration % 60}м`;
-
     const imageCover = location.pathname === '/saved-movies' ? movie.image : `https://api.nomoreparties.co${movie.image.url}`;
     const thumbnail = location.pathname === '/saved-movies' ? movie.thumbnail : `$https://api.nomoreparties.co${movie.image.formats.thumbnail.url}`;
 

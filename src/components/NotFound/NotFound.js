@@ -1,11 +1,9 @@
 import React from "react";
-// import { useHistory } from "react-router-dom";
 import "./NotFound.css";
 
 function NotFound() {
-    // const history = useHistory();
     function goBack() {
-        window.history.go(-3);
+        window.history.go(-2);
     }
 
     return (
@@ -14,7 +12,6 @@ function NotFound() {
             <p className="not-found__subtitle">Страница не найдена</p>
             <button
                 className="not-found__button"
-                // onClick={() => history.goBack()}
                 onClick={goBack}
             >Назад
             </button>

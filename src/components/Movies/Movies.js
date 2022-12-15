@@ -4,7 +4,6 @@ import SearchForm from "../SearchForm/SearchForm";
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
 
 import Preloader from "../Preloader/Preloader";
-import {moviesApi} from "../../utils/MoviesApi";
 
 const Movies = ({
                     isLoading,
@@ -14,7 +13,6 @@ const Movies = ({
                     onLike,
                     onDislike,
                     searchKeyword,
-                    setAllMovies,
                 }) => {
 
     const [checkActive, setCheckActive] = useState(false);
@@ -34,18 +32,6 @@ const Movies = ({
             setCheckActive(true);
         }
     }, [isShort]);
-
-    // useEffect(() => {
-    //     if (!localStorage.loadedMovies) {
-    //         moviesApi
-    //             .getMoviesAll()
-    //             .then((data) => {
-    //                 setAllMovies(data);
-    //                 localStorage.setItem('loadedMovies', JSON.stringify(data));
-    //             })
-    //             .catch((err) => console.log(err));
-    //     }
-    // }, [setAllMovies]);
 
     return (
         <>
