@@ -1,15 +1,55 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./SearchForm.css";
 import FilterCheckbox from "../FilterCheckbox/FilterCheckbox";
+import {ERROR_INPUT_SEARCH_MOVIES} from "../../utils/constants";
 
-function SearchForm() {
+const SearchForm = ({ onSubmit, checkClick, searchKeyword, isShort, setAllMovies }) => {
+    const [errorSetWord, setErrorSetWord] = useState('');
+
+    const location = useLocation();
+
+    const [movie, setMovies] = useState("");
+
+    useEffect(() => {
+        if (searchKeyword && location.pathname === "/movies") {
+            setMovies(searchKeyword);
+        }
+    }, [searchKeyword, location.pathname]);
+
+    const handleInputChange = (event) => {
+        setErrorSetWord('');
+        setMovies(event.target.value);
+    }
+
+    const handleSearch = (event) => {
+        event.preventDefault();
+        if (movie === '') {
+            setErrorSetWord(ERROR_INPUT_SEARCH_MOVIES);
+        } else {
+            onSubmit(movie);
+        }
+    }
+
     return (
         <section className="search-form">
-            <form className="search-form__container">
-                <input className="search-form__input" type="text" placeholder="Фильм" required/>
+            <form className="search-form__container" onSubmit={handleSearch}>
+                <input
+                    type="text"
+                    className="search-form__input"
+                    placeholder="Фильм"
+                    onChange={handleInputChange}
+                    value={movie}
+                />
+
+                <span className="search-form__input-error">{errorSetWord}</span>
+
                 <button className="search-form__button" type="submit">Поиск</button>
             </form>
-            <FilterCheckbox />
+            <FilterCheckbox
+                checkClick={checkClick}
+                isShort={isShort}
+            />
         </section>
     )
 }

@@ -31,13 +31,9 @@
 }
 
 .techs__list {
-    /*width: 100%;*/
     display: grid;
-    /*align-self: center;*/
     list-style: none;
     padding: 0;
-    /*grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));*/
-    /*grid-template-rows: repeat(auto-fit, minmax(57px, 1fr));*/
     grid-template-columns: repeat(auto-fit, 84px);
     grid-template-rows: repeat(auto-fit, 57px);
     gap: 10px;
@@ -99,11 +95,6 @@
         margin-bottom: 50px;
     }
 
-    /*.techs__list {*/
-    /*    display: grid;*/
-    /*    !*grid-template-columns: 1fr 1fr;*!*/
-    /*}*/
-
     .techs__list-item {
         max-width: 84px;
         max-height: 57px;
@@ -111,8 +102,4 @@
         margin: 0;
         padding: 0;
     }
-
-    /*.techs__list-item:last-of-type {*/
-    /*    justify-self: start;*/
-    /*}*/
 }

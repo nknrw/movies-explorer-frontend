@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./HamburgerMenu.css"
 
 function HamburgerMenu({open, close}) {
+    const location = useLocation();
     return (
         <section className={`${open && 'hamburger-menu__overlay'}`} onClick={close}>
             <div className={`hamburger-menu ${open && 'hamburger-menu_open'}`}>
@@ -10,15 +11,13 @@ function HamburgerMenu({open, close}) {
                 <nav className="hamburger-menu__container">
 
                     <div className="hamburger-menu__links">
-                        <Link to="/" className="hamburger-menu__element hamburger-menu__link">Главная</Link>
-                        <Link to="/movies" className="hamburger-menu__element hamburger-menu__link">Фильмы</Link>
-                        <Link to="/saved-movies" className="hamburger-menu__element hamburger-menu__link">Сохранённые фильмы</Link>
+                        <Link to="/" className={location.pathname === '/' ? 'hamburger-menu__link hamburger-menu__link_active' : 'hamburger-menu__link'}>Главная</Link>
+                        <Link to="/movies" className={location.pathname === '/movies' ? 'hamburger-menu__link hamburger-menu__link_active' : 'hamburger-menu__link'}>Фильмы</Link>
+                        <Link to="/saved-movies" className={location.pathname === '/saved-movies' ? 'hamburger-menu__link hamburger-menu__link_active' : 'hamburger-menu__link'}>Сохранённые фильмы</Link>
                     </div>
                     <div className="hamburger-menu__profile">
-                        <Link to="/profile" className="hamburger-menu__link">Аккаунт</Link>
+                        <Link to="/profile" className={location.pathname === '/profile' ? 'hamburger-menu__link hamburger-menu__link_active' : 'hamburger-menu__link'}>Аккаунт</Link>
                         <Link to="/profile" className="hamburger-menu__profile-icon">
-                            {/*<Link to="/profile" className="hamburger-menu__link_profile">*/}
-                            {/*    <img src={profileIcon} alt="Аккаунт" className="hamburger-menu__profile-icon"/>*/}
                         </Link>
                     </div>
 
