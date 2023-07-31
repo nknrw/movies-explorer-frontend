@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutMe.css";
-import photo from "../../images/about-me-photo.jpg";
+import photo from "../../images/about-me-photo.png";
 
 function AboutMe() {
     return (
@@ -9,8 +9,8 @@ function AboutMe() {
             <div className="about-me__info">
                 <div className="about-me__info-container">
                     <h3 className="about-me__name">Андрей</h3>
-                    <p className="about-me__profession">Фронтенд-разработчик, 27 лет</p>
-                    <p className="about-me__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p className="about-me__profession">Фронтенд-разработчик, 28 лет</p>
+                    <p className="about-me__about">Привет! Я начинающий разработчик и увлечен веб-разработкой. Мне нравится изучать все, что связано с этой областью, и каждый день я открываю для себя что-то новое и интересное. Создание веб-приложений и их функциональность стали моими основными источниками вдохновения. С момента, как я впервые начал заниматься веб-разработкой, я был увлечен этим творческим процессом и его возможностями. Изучение различных технологий, языков программирования и фреймворков стало моим повседневным занятием, и я с радостью применяю полученные знания в своих проектах. Программирование для меня не просто работа, но и способ самовыражения. Я наслаждаюсь возможностью воплощать свои идеи в жизнь через код и создавать удобные и интуитивно понятные интерфейсы для пользователей. Хотя я еще только начинаю свой путь в веб-разработке, я уже имею опыт работы в нескольких проектах, что помогло мне расширить свои навыки и улучшить свои способности в решении различных задач. Каждый проект был для меня ценным опытом, который укрепил мое стремление к профессиональному росту. Я убежден, что веб-разработка — это динамичная и быстро развивающаяся сфера, и я готов постоянно обновлять свои знания и навыки, чтобы оставаться в курсе последних тенденций и передовых технологий. Моя главная цель — стать опытным веб-разработчиком, способным создавать удивительные и инновационные проекты. Я стремлюсь к профессиональному росту, а также к тому, чтобы внести свой вклад в развитие интернет-технологий и создавать полезные и удобные решения для пользователей. Я с нетерпением жду новых вызовов и возможностей, которые принесет мне будущее веб-разработки. Буду рад обмену опытом и сотрудничеству с опытными профессионалами, а также с теми, кто разделяет мою страсть к созданию веб-приложений, которые делают жизнь пользователей лучше и интереснее.</p>
                     <ul className='about-me__socials'>
                         <a className='about-me__link' href='https://github.com/nknrw' target='_blank' rel="noreferrer">Github</a>
                     </ul>

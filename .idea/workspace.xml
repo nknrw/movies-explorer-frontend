@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: исправления после второй проверки" />
+    <list default="true" id="b16500c5-ac58-4297-b45d-731d3caa4afe" name="Changes" comment="fix: фикс 1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +33,11 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupnpm">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -51,6 +56,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;level-3&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Dev/diploma/movies-explorer-frontend/src/images&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -58,10 +64,18 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Dev\diploma\movies-explorer-frontend\src\images" />
@@ -112,6 +126,18 @@
       <workItem from="1670004311020" duration="9780000" />
       <workItem from="1670064432765" duration="217000" />
       <workItem from="1670069264223" duration="2892000" />
+      <workItem from="1674605095791" duration="449000" />
+      <workItem from="1674605558383" duration="622000" />
+      <workItem from="1674914696571" duration="80000" />
+      <workItem from="1682029912783" duration="103000" />
+      <workItem from="1682030066969" duration="109000" />
+      <workItem from="1682030400768" duration="50000" />
+      <workItem from="1682625381733" duration="51000" />
+      <workItem from="1682852322364" duration="270000" />
+      <workItem from="1682881969980" duration="12000" />
+      <workItem from="1684350923059" duration="791000" />
+      <workItem from="1685127104910" duration="2011000" />
+      <workItem from="1685574492129" duration="107000" />
     </task>
     <task id="LOCAL-00001" summary="feat: бургер меню и карточки фильмов">
       <created>1669785969879</created>
@@ -155,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670072085483</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix: фикс 1">
+      <created>1672508141065</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672508141065</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +212,7 @@
     <MESSAGE value="fix: ридми + альтернативный шрифт" />
     <MESSAGE value="fix: исправления 1" />
     <MESSAGE value="fix: исправления после второй проверки" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: исправления после второй проверки" />
+    <MESSAGE value="fix: фикс 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: фикс 1" />
   </component>
 </project>
